@@ -495,26 +495,18 @@ export default function AboutPage() {
                   <br />
                   WE BUILD{" "}
                   <span style={{ display: "inline", color: "transparent", WebkitTextStroke: "2px #FF6B00" }}>
-                    SQUADS.
+                    CLIQS.
                   </span>
                 </h1>
               </FadeUp>
 
               <FadeUp delay={160}>
                 <p style={{ fontSize: 16, lineHeight: 1.75, marginBottom: 28, maxWidth: 440, fontWeight: 300, color: "var(--color-sq-body)" }}>
-                  Sportcliq was born from a simple frustration — fans in Lagos and Toronto were watching the same match but had nowhere to experience it together. We built the bridge.
+                  Sportcliq was born from a simple idea — fans everywhere deserved a better way to experience sports together. We built the place to make it happen.
                 </p>
               </FadeUp>
 
-              <FadeUp delay={240}>
-                <div style={{ display: "flex", gap: 10, flexWrap: "wrap" }}>
-                  {[{ flag: "🇳🇬", label: "Nigeria" }, { flag: "🇨🇦", label: "Canada" }, { flag: "🇺🇸", label: "USA" }].map(c => (
-                    <div key={c.label} style={{ display: "flex", alignItems: "center", gap: 8, padding: "8px 16px", borderRadius: 8, fontSize: 13, fontWeight: 500, border: "1.5px solid var(--color-sq-border)", background: "var(--color-sq-bg)", color: "var(--color-sq-ink)" }}>
-                      <span style={{ fontSize: 15 }}>{c.flag}</span> {c.label}
-                    </div>
-                  ))}
-                </div>
-              </FadeUp>
+              
             </div>
 
             <FadeUp delay={120}>
@@ -528,10 +520,7 @@ export default function AboutPage() {
                     <div key={i} style={{ width: 28, height: 28, borderRadius: "50%", background: c, border: "2px solid white", marginLeft: i > 0 ? -10 : 0 }} />
                   ))}
                 </div>
-                <div>
-                  <p style={{ fontSize: 13, fontWeight: 600, color: "var(--color-sq-ink)" }}>24K+ Fans</p>
-                  <p style={{ fontSize: 11, color: "var(--color-sq-muted)" }}>Online now</p>
-                </div>
+                
               </div>
             </FadeUp>
           </div>
@@ -539,7 +528,7 @@ export default function AboutPage() {
       </section>
 
       {/* ── STATS ───────────────────────────────── */}
-      <section className="about-section" style={{ background: "var(--color-sq-dark)", position: "relative", overflow: "hidden" }}>
+      {/* <section className="about-section" style={{ background: "var(--color-sq-dark)", position: "relative", overflow: "hidden" }}>
         <div style={{ pointerEvents: "none", position: "absolute", inset: 0, opacity: 0.06, backgroundImage: "linear-gradient(#fff 1px, transparent 1px), linear-gradient(90deg, #fff 1px, transparent 1px)", backgroundSize: "40px 40px" }} />
         <div className="about-container" style={{ paddingTop: 64, paddingBottom: 64 }}>
           <div className="stats-grid">
@@ -558,57 +547,56 @@ export default function AboutPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* ── STORY ───────────────────────────────── */}
-      <section className="about-section" style={{ background: "var(--color-sq-bg)", paddingTop: 96, paddingBottom: 96 }}>
-        <div className="about-container">
-          <div className="story-grid">
-            <FadeUp>
-              <div className="story-collage">
-                <div className="story-img-tall">
-                  <img src="/fans.jpg" alt="Football fans" />
-                </div>
-                <div className="story-img">
-                  <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?w=400&auto=format&fit=crop&q=80" alt="Basketball" />
-                </div>
-                <div className="story-img">
-                  <img src="https://images.unsplash.com/photo-1552674605-db6ffd4facb5?w=400&auto=format&fit=crop&q=80" alt="Athletics" />
-                </div>
-              </div>
-            </FadeUp>
-
-            <div>
-              <FadeUp delay={80}>
-                <p style={{ fontSize: 11, fontWeight: 600, letterSpacing: "0.15em", textTransform: "uppercase", color: "var(--color-sq-blue)", marginBottom: 16 }}>How It Started</p>
-                <h2 style={{ fontFamily: "var(--font-headline)", fontSize: "clamp(34px, 5vw, 60px)", letterSpacing: "0.02em", color: "var(--color-sq-ink)", lineHeight: 1, marginBottom: 24 }}>
-                  BORN FROM THE{" "}
-                  {/* ✅ FIXED: plain color, no transparent needed */}
-                  <span style={{ color: "#FF6B00" }}>STANDS</span>
-                </h2>
-              </FadeUp>
-
-              <FadeUp delay={160}>
-                <div style={{ display: "flex", flexDirection: "column", gap: 16, fontSize: 15, lineHeight: 1.8, fontWeight: 300, color: "var(--color-sq-body)", marginBottom: 28 }}>
-                  <p>In 2023, our founders — sports-obsessed Nigerians living in Canada — noticed a gap. During AFCON, they were texting friends back in Lagos about every goal, every foul, every heartbreak. There was no single place to do it properly.</p>
-                  <p>They saw that African football culture was exploding globally, basketball was rising in Nigeria, and the Nigerian diaspora was growing — but fan engagement platforms weren't built for this community.</p>
-                  <p>So they built one. Sportcliq is the platform they wished existed — real-time, community-first, and built for the culture.</p>
-                </div>
-              </FadeUp>
-
-              <FadeUp delay={240}>
-                <div style={{ display: "flex", alignItems: "flex-start", gap: 16, padding: 20, borderRadius: 16, border: "1.5px solid var(--color-sq-border)", background: "var(--color-sq-surface)" }}>
-                  <div style={{ width: 40, height: 40, borderRadius: 12, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 18, flexShrink: 0, background: "rgba(0,87,255,0.1)" }}>🎯</div>
-                  <div>
-                    <p style={{ fontSize: 13, fontWeight: 600, marginBottom: 4, color: "var(--color-sq-ink)" }}>Our MVP Goal</p>
-                    <p style={{ fontSize: 12, lineHeight: 1.6, color: "var(--color-sq-body)" }}>Validate community-driven fan engagement while ensuring scalability across multiple sports and markets in Nigeria, Canada, and the USA.</p>
-                  </div>
-                </div>
-              </FadeUp>
-            </div>
+     <section className="about-section" style={{ background: "var(--color-sq-bg)", paddingTop: 96, paddingBottom: 96 }}>
+  <div className="about-container">
+    <div className="story-grid">
+      <FadeUp>
+        <div className="story-collage">
+          <div className="story-img-tall">
+            <img src="/fans.jpg" alt="Stadium entry" />
+          </div>
+          <div className="story-img">
+            <img src="https://images.unsplash.com/photo-1580748141549-71748dbe0bdc?w=400&auto=format&fit=crop&q=80" alt="Ice hockey" />
+          </div>
+          <div className="story-img">
+            <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?w=400&auto=format&fit=crop&q=80" alt="Basketball" />
           </div>
         </div>
-      </section>
+      </FadeUp>
+
+      <div>
+        <FadeUp delay={80}>
+          <p style={{ fontSize: 11, fontWeight: 600, letterSpacing: "0.15em", textTransform: "uppercase", color: "var(--color-sq-blue)", marginBottom: 16 }}>THE ORIGIN</p>
+          <h2 style={{ fontFamily: "var(--font-headline)", fontSize: "clamp(34px, 5vw, 60px)", letterSpacing: "0.02em", color: "var(--color-sq-ink)", lineHeight: 1, marginBottom: 24 }}>
+            BORN FROM THE{" "}
+            <span style={{ color: "#FF6B00" }}>STANDS</span>
+          </h2>
+        </FadeUp>
+
+        <FadeUp delay={160}>
+          <div style={{ display: "flex", flexDirection: "column", gap: 16, fontSize: 15, lineHeight: 1.8, fontWeight: 300, color: "var(--color-sq-body)", marginBottom: 28 }}>
+            <p>Sportcliq was born from a simple idea — sports fans everywhere deserved a better way to experience the game together.</p>
+            <p>We saw passionate fans in Canada watching the same matches, cheering the same plays, feeling the same highs and lows — but doing it alone. No shared space. No real community. Just group chats and social media noise.</p>
+            <p>So we built the place they deserved. Sportcliq is community-first, real-time, and built for the fans who live and breathe sport.</p>
+          </div>
+        </FadeUp>
+
+        <FadeUp delay={240}>
+          <div style={{ display: "flex", alignItems: "flex-start", gap: 16, padding: 20, borderRadius: 16, border: "1.5px solid var(--color-sq-border)", background: "var(--color-sq-surface)" }}>
+            <div style={{ width: 40, height: 40, borderRadius: 12, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 18, flexShrink: 0, background: "rgba(0,87,255,0.1)" }}>🎯</div>
+            <div>
+              <p style={{ fontSize: 13, fontWeight: 600, marginBottom: 4, color: "var(--color-sq-ink)" }}>Where We're Starting</p>
+              <p style={{ fontSize: 12, lineHeight: 1.6, color: "var(--color-sq-body)" }}>Launching in Canada — building the foundation for a fan community that's real-time, sport-agnostic, and built to grow.</p>
+            </div>
+          </div>
+        </FadeUp>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* ── VALUES ──────────────────────────────── */}
       <section className="about-section" style={{ background: "var(--color-sq-surface)", paddingTop: 96, paddingBottom: 96 }}>
@@ -627,9 +615,9 @@ export default function AboutPage() {
               { icon: "🌍", title: "COMMUNITY FIRST",  desc: "Every decision starts with the fan. We build features that bring people together, not just engagement metrics.", accent: "#0057FF" },
               { icon: "⚡", title: "REAL-TIME ENERGY", desc: "Sports are alive. Our platform moves at the pace of the game — no delays, no lag, no missing the moment.",    accent: "#FF6B00" },
               { icon: "🤝", title: "CULTURE IS CORE",  desc: "We don't just cover sports — we celebrate the culture around them. From chants to banter to local legends.",   accent: "#00E87A" },
-              { icon: "🌐", title: "NO BORDERS",       desc: "Whether you're in Abuja or Alberta, you belong here. We connect the diaspora and the home crowd alike.",        accent: "#7B2FFF" },
+              { icon: "🌐", title: "NO BORDERS",       desc: "We're building the ultimate home for sports fans — a place where passion meets community and every voice counts. Welcome to the Cliq.",        accent: "#7B2FFF" },
               { icon: "📍", title: "LOCAL MATTERS",    desc: "Global vibes, local roots. Event discovery is hyper-local so you never miss what's happening in your city.",    accent: "#00D4FF" },
-              { icon: "🚀", title: "BUILT TO SCALE",   desc: "We start with Nigeria and Canada, but we're building infrastructure for every sports market in the world.",     accent: "#FFD600" },
+              { icon: "🚀", title: "BUILT TO SCALE",   desc: "Building a Platform For every sport Lover In The world.",     accent: "#FFD600" },
             ].map((v, i) => (
               <FadeUp key={v.title} delay={i * 60}>
                 <ValueCard {...v} />
@@ -647,13 +635,12 @@ export default function AboutPage() {
           <FadeUp>
             <p style={{ fontSize: 11, fontWeight: 600, letterSpacing: "0.15em", textTransform: "uppercase", color: "var(--color-sq-muted)", marginBottom: 24 }}>Our Mission</p>
             <blockquote style={{ fontFamily: "var(--font-headline)", fontSize: "clamp(22px, 4vw, 46px)", letterSpacing: "0.03em", color: "", lineHeight: 1.15, marginBottom: 32 }}>
-              "TO UNITE SPORTS FANS ACROSS{" "}
-              <span style={{ color: "#0057FF" }}>NIGERIA</span>,{" "}
-              <span style={{ color: "#FF6B00" }}>CANADA</span> &{" "}
-              <span style={{ color: "#00E87A" }}>BEYOND</span> — ONE SQUAD AT A TIME."
+              "TO UNITE SPORTS FANS ACROSS{" "} &{" "}
+              <span style={{ color: "#00E87A" }}>BEYOND</span> — ONE <span style={{ color: "#0057ff" }}>CLIQ </span>
+               AT A TIME."
             </blockquote>
             <p style={{ fontSize: 15, fontWeight: 300, lineHeight: 1.75, color: "var(--color-sq-muted)", maxWidth: 560, margin: "0 auto" }}>
-              The MVP focuses on combining real-time fan conversations, personalised feeds, and local event discovery into one unified experience — validating community-driven engagement at scale.
+              The Platform focuses on combining real-time fan conversations, personalised feeds, and local event discovery into one unified experience — validating community-driven engagement at scale.
             </p>
           </FadeUp>
         </div>
@@ -677,11 +664,10 @@ export default function AboutPage() {
 
           <div className="sports-grid">
             {[
-              { icon: "⚽", sport: "Football",   color: "#0057FF", desc: "AFCON, EPL, local leagues" },
-              { icon: "🏀", sport: "Basketball", color: "#FF6B00", desc: "NBL, NBA, college ball" },
-              { icon: "🏃", sport: "Athletics",  color: "#00E87A", desc: "Diamond League & more" },
-              { icon: "🏉", sport: "Rugby",      color: "#7B2FFF", desc: "Local & international" },
-              { icon: "🏏", sport: "Cricket",    color: "#FFD600", desc: "T20, Test & ODI" },
+              { icon: "⚽", sport: "Soccer",   color: "#0057FF", desc: "" },
+              { icon: "🏀", sport: "Basketball", color: "#FF6B00", desc: "" },
+              { icon: "🏉", sport: "American Football",      color: "#7B2FFF", desc: "" },
+              { icon: "🏒", sport: "Ice-Hockey",    color: "#FFD600", desc: "" },
             ].map((s, i) => (
               <FadeUp key={s.sport} delay={i * 70}>
                 <SportCard {...s} />
@@ -691,75 +677,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* ── TEAM ────────────────────────────────── */}
-      <section className="about-section" style={{ background: "var(--color-sq-surface)", paddingTop: 96, paddingBottom: 96 }}>
-        <div className="about-container">
-          <FadeUp>
-            <div style={{ textAlign: "center", marginBottom: 56 }}>
-              <p style={{ fontSize: 11, fontWeight: 600, letterSpacing: "0.15em", textTransform: "uppercase", color: "var(--color-sq-blue)", marginBottom: 12 }}>The People</p>
-              <h2 style={{ fontFamily: "var(--font-headline)", fontSize: "clamp(34px, 5vw, 60px)", letterSpacing: "0.02em", color: "var(--color-sq-ink)", lineHeight: 1 }}>
-                MEET THE{" "}
-                {/* ✅ FIXED: plain color, no transparent needed */}
-                <span style={{ color: "#FF6B00" }}>SQUAD</span>
-              </h2>
-              <p style={{ fontSize: 15, marginTop: 16, maxWidth: 400, margin: "16px auto 0", fontWeight: 300, color: "var(--color-sq-body)" }}>
-                Fans first. Builders always. We're the people who stayed up watching the match and thought — there has to be a better way.
-              </p>
-            </div>
-          </FadeUp>
-
-          <div className="team-grid">
-            {[
-              { name: "Tunde Adeyemi", role: "Co-Founder & CEO", country: "Nigeria", flag: "🇳🇬", color: "#0057FF" },
-              { name: "Seun Okafor",   role: "Co-Founder & CTO", country: "Canada",  flag: "🇨🇦", color: "#FF6B00" },
-              { name: "Amara Diallo",  role: "Head of Product",  country: "Nigeria", flag: "🇳🇬", color: "#00E87A" },
-              { name: "Marcus Webb",   role: "Head of Growth",   country: "Canada",  flag: "🇨🇦", color: "#7B2FFF" },
-            ].map((member, i) => (
-              <FadeUp key={member.name} delay={i * 80}>
-                <TeamCard {...member} />
-              </FadeUp>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── ROADMAP ─────────────────────────────── */}
-      <section className="about-section" style={{ background: "var(--color-sq-bg)", paddingTop: 96, paddingBottom: 96 }}>
-        <div className="about-container" style={{ maxWidth: 720 }}>
-          <FadeUp>
-            <div style={{ textAlign: "center", marginBottom: 64 }}>
-              <p style={{ fontSize: 11, fontWeight: 600, letterSpacing: "0.15em", textTransform: "uppercase", color: "var(--color-sq-blue)", marginBottom: 12 }}>Where We're Headed</p>
-              <h2 style={{ fontFamily: "var(--font-headline)", fontSize: "clamp(34px, 5vw, 56px)", letterSpacing: "0.02em", color: "var(--color-sq-ink)", lineHeight: 1 }}>
-                THE{" "}
-                  ROADMAP
-              </h2>
-            </div>
-          </FadeUp>
-
-          <div style={{ position: "relative" }}>
-            <div className="roadmap-line" />
-            {[
-              { quarter: "Q3 2025", title: "MVP Launch",       desc: "Fan feed, event discovery, and live match conversations go live in Nigeria & Canada.",         color: "#0057FF", done: true },
-              { quarter: "Q4 2025", title: "Community Squads", desc: "Squad creation, supporter groups, and personalised feed algorithm launch.",                  color: "#FF6B00", done: false },
-              { quarter: "Q1 2026", title: "USA Expansion",    desc: "Platform opens to Nigerian-American and Nigerian-Canadian diaspora communities.",            color: "#00E87A", done: false },
-              { quarter: "Q2 2026", title: "Multi-Sport Hub",  desc: "Basketball, Rugby, Athletics, and Cricket communities fully activated across all markets.", color: "#7B2FFF", done: false },
-            ].map((item, i) => (
-              <FadeUp key={item.quarter} delay={i * 100}>
-                <div className="roadmap-item">
-                  <div className="roadmap-dot" style={{ background: item.done ? item.color : "var(--color-sq-bg)", borderColor: item.color }} />
-                  <div style={{ flex: 1 }}>
-                    <div style={{ display: "inline-block", borderRadius: 16, padding: "16px 20px", border: "1.5px solid var(--color-sq-border)", background: "var(--color-sq-surface)", width: "100%" }}>
-                      <span style={{ fontSize: 11, fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", display: "block", marginBottom: 6, color: item.color }}>{item.quarter}</span>
-                      <h3 style={{ fontFamily: "var(--font-headline)", letterSpacing: "0.04em", color: "var(--color-sq-ink)", fontSize: 15, marginBottom: 6 }}>{item.title}</h3>
-                      <p style={{ fontSize: 13, lineHeight: 1.6, color: "var(--color-sq-body)" }}>{item.desc}</p>
-                    </div>
-                  </div>
-                </div>
-              </FadeUp>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* ── CTA ─────────────────────────────────── */}
       {/* ✅ FIXED: rebuilt with CSS classes so z-index stacking works properly */}
@@ -779,7 +696,7 @@ export default function AboutPage() {
                   JOIN THE <span className="cta-heading-accent">MOVEMENT</span>
                 </h2>
                 <p className="cta-body">
-                  Thousands of fans across Nigeria and Canada are waiting. Get early access when we launch and help shape the future of Sportcliq.
+                  Find your cliq. Sports fans across North America are signing up — join the conversation before we go live.
                 </p>
                 <div className="cta-buttons">
                   <a href="/contact" className="cta-btn-primary">

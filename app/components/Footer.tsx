@@ -8,8 +8,8 @@ const TelegramIcon = () => (
   </svg>
 );
 const TwitterIcon = () => (
-  <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
-    <path d="M3 3l5.5 7L3 17h2l4.5-5.5L14 17h3l-5.8-7.5L17 3h-2l-4 4.8L6 3H3z" fill="var(--ink)" />
+  <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+    <path d="M3 3l5.5 7L3 17h2l4.5-5.5L14 17h3l-5.8-7.5L17 3h-2l-4 4.8L6 3H3z" fill="#111110" />
   </svg>
 );
 const InstagramIcon = () => (
@@ -27,8 +27,8 @@ const InstagramIcon = () => (
   </svg>
 );
 const TikTokIcon = () => (
-  <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
-    <path d="M13 2c.2 1.8 1.2 3 3 3.2v2.2c-1.1 0-2.1-.4-3-.9V13a5 5 0 11-5-5v2.2a2.8 2.8 0 102.8 2.8V2H13z" fill="var(--ink)"/>
+  <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+    <path d="M13 2c.2 1.8 1.2 3 3 3.2v2.2c-1.1 0-2.1-.4-3-.9V13a5 5 0 11-5-5v2.2a2.8 2.8 0 102.8 2.8V2H13z" fill="#111110"/>
   </svg>
 );
 
@@ -102,10 +102,10 @@ export default function Footer() {
         <div className="footer-bottom-inner">
           <p className="footer-copyright">© 2025 Sportcliq. All rights reserved.</p>
           <div className="footer-regions">
-            {["🇳🇬", "🇨🇦", "🇺🇸"].map((flag) => (
+            {["🇨🇦",].map((flag) => (
               <span key={flag} className="footer-flag">{flag}</span>
             ))}
-            <span className="footer-region-text">Nigeria · Canada · USA</span>
+            <span className="footer-region-text">Canada</span>
           </div>
         </div>
       </div>

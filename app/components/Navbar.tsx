@@ -78,7 +78,7 @@ export default function Navbar() {
               rel="noopener noreferrer"
               className="btn-primary"
             >
-              Join the Squad
+              Join the Cliq On Telegram
             </a>
           </div>
 
@@ -131,7 +131,7 @@ export default function Navbar() {
                 onClick={() => setOpen(false)}
                 className="btn-primary full-width"
               >
-                Join the Squad
+                Join the Cliq On Telegram
               </a>
             </div>
           </div>

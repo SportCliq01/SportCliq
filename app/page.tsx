@@ -775,37 +775,36 @@ export default function SportcliqMinimal() {
 
       {/* ═══ HERO ════════════════════════════════ */}
       <section className="hero">
-        <Ticker />
+        
 
         <div className="hero-inner">
           <div className="hero-label fu fu1">
             <div className="live-dot" />
-            <span>Launching soon in Nigeria, Canada & USA</span>
+            <span></span>
           </div>
 
           <h1 className="hero-h1 fu fu2">
             WHERE FANS<br />FIND THEIR{" "}
-            <span style={{ color: "var(--accent)" }}>SQUAD.</span>
+            <span style={{ color: "var(--accent)" }}>CLIQ.</span>
           </h1>
 
           <div className="hero-sub-row fu fu3">
             <p>
-              Real-time fan conversations, personalized sports feeds, and local event discovery — one platform built for the culture, from Lagos to Toronto.
+              Real-time fan conversations, personalized sports feeds, and local event discovery — one platform built for the culture.
             </p>
             <div className="hero-cta">
               <button className="btn-primary" onClick={() => setWaitlistOpen(true)} style={{ fontSize: 14, padding: "14px 28px" }}>
-  JOIN THE WAITLIST
-  <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M7 3l4 4-4 4" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round"/></svg>
-</button>
-<a href="https://t.me/sportcliq" target="_blank" rel="noopener noreferrer" className="btn-outline" style={{ fontSize: 14, padding: "14px 28px", textDecoration: "none" }}>
-  JOIN THE SQUAD
-</a>
-              <p className="hero-cta-hint">2,400+ fans already signed up</p>
+                JOIN THE WAITLIST
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M7 3l4 4-4 4" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round"/></svg>
+              </button>
+              <a href="https://t.me/sportcliq" target="_blank" rel="noopener noreferrer" className="btn-outline" style={{ fontSize: 14, padding: "14px 28px", textDecoration: "none" }}>
+                JOIN THE CLIQ ON TELEGRAM
+              </a>
             </div>
           </div>
 
           <div className="hero-tags fu fu3">
-            {["⚽ Football", "🏀 Basketball", "🏃 Athletics", "🏉 Rugby", "🏏 Cricket"].map(s => (
+            {["⚽ Soccer", "🏀 Basketball", "🏉 American Football", "🏒 Ice-Hockey"].map(s => (
               <span key={s} className="tag">{s}</span>
             ))}
           </div>
@@ -817,7 +816,7 @@ export default function SportcliqMinimal() {
             alt="Stadium crowd"
           />
           <div className="hero-img-fade" />
-          <div className="hero-stats">
+          {/* <div className="hero-stats">
             {[
               { val: "24K+", label: "Active Fans" },
               { val: "150+", label: "Monthly Events" },
@@ -828,7 +827,7 @@ export default function SportcliqMinimal() {
                 <p className="hero-stat-label">{s.label}</p>
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -841,19 +840,12 @@ export default function SportcliqMinimal() {
               SPORTS HAS<br />NO <span style={{ color: "var(--accent2)" }}>BORDERS.</span>
             </h2>
             <p className="mission-body">
-              Sportcliq is a fan engagement and community platform designed to bring sports enthusiasts together across Nigeria, Canada, and the USA.
+              Sportcliq is a fan engagement and community platform designed to bring sports enthusiasts together.
             </p>
             <p className="mission-body">
               We combine real-time conversations, personalized feeds, and local event discovery into one unified experience — built for the culture.
             </p>
-            <div className="mission-countries">
-              {[{ flag: "🇳🇬", label: "Nigeria" }, { flag: "🇨🇦", label: "Canada" }, { flag: "🇺🇸", label: "USA" }].map(c => (
-                <div key={c.label} className="mission-country">
-                  <span>{c.flag}</span>
-                  <span>{c.label}</span>
-                </div>
-              ))}
-            </div>
+           
           </div>
 
           <div className="mission-photos">
@@ -871,7 +863,7 @@ export default function SportcliqMinimal() {
       </section>
 
       {/* ═══ STATS ════════════════════════════════ */}
-      <section className="stats">
+      {/* <section className="stats">
         <div className="stats-inner">
           {[
             { to: 24000, suffix: "+", label: "Active fans" },
@@ -885,7 +877,7 @@ export default function SportcliqMinimal() {
             </div>
           ))}
         </div>
-      </section>
+      </section> */}
 
       {/* ═══ FEATURES ═════════════════════════════ */}
       <section className="features">
@@ -917,10 +909,10 @@ export default function SportcliqMinimal() {
             </div>
 
             {[
-              { img: "https://images.unsplash.com/photo-1504450758481-7338eba7524a?w=600&auto=format&fit=crop&q=80", label: "Discovery",    title: "EVENT DISCOVERY",     desc: "Find local sports events near you — grassroots to major tournaments." },
+              { img: "https://images.unsplash.com/photo-1504450758481-7338eba7524a?w=600&auto=format&fit=crop&q=80", label: "Discovery",    title: "EVENT DISCOVERY",     desc: "Find local sports events and watch parties near you." },
               { img: "https://images.unsplash.com/photo-1517649763962-0c623066013b?w=600&auto=format&fit=crop&q=80", label: "Personalized", title: "YOUR FEED",           desc: "Curated to the teams and sports you're most passionate about." },
-              { img: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&auto=format&fit=crop&q=80", label: "Community",    title: "SQUAD BUILDER",      desc: "Build your squad, join supporter groups, find your people." },
-              { img: "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?w=600&auto=format&fit=crop&q=80", label: "Global",       title: "CROSS-BORDER UNITY", desc: "Bridging Lagos to Toronto. Sports has no borders." },
+              { img: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&auto=format&fit=crop&q=80", label: "Community",    title: "CREATE A CLIQ",      desc: "Create A Cliq Join A Cliq, Find Your Cliq." },
+              { img: "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?w=600&auto=format&fit=crop&q=80", label: "Global",       title: "CROSS-BORDER UNITY", desc: "Sports has no borders. So Join A Cliq!" },
             ].map((f, i) => (
               <div key={i} className="feat-card">
                 <img className="feat-img" src={f.img} alt={f.title} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
@@ -936,139 +928,88 @@ export default function SportcliqMinimal() {
         </div>
       </section>
 
-      {/* ═══ LIVE EVENTS ══════════════════════════ */}
-      <section className="events">
-        <div className="events-inner">
-          <div className="events-header">
-            <div>
-              <div className="events-live">
-                <div className="live-dot" />
-                <span>Happening now</span>
-              </div>
-              <h2 className="events-h2">
-                LIVE ON <span style={{ color: "var(--accent)" }}>SPORTCLIQ</span>
-              </h2>
-            </div>
-            <a href="#" style={{ fontSize: 13, fontWeight: 500, color: "var(--ink2)", display: "flex", alignItems: "center", gap: 6 }}>
-              View all events
-              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M7 3l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/></svg>
-            </a>
-          </div>
-
-          <div className="events-grid">
-            {[
-              { img: "https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?w=600&auto=format&fit=crop&q=80", sport: "Football",         match: "Super Eagles vs Ivory Coast",  detail: "AFCON Qualifier · 67' Playing",  fans: "12,400", score: "2 – 0" },
-              { img: "https://images.unsplash.com/photo-1504450758481-7338eba7524a?w=600&auto=format&fit=crop&q=80", sport: "Basketball",       match: "Lagos Ballers vs Raptors 905", detail: "Nigeria Basketball League · Q3", fans: "3,800",  score: "78 – 62" },
-              { img: "https://images.unsplash.com/photo-1580748141549-71748dbe0bdc?w=500&auto=format&fit=crop&q=80", sport: "Ice-Hockey",       match: "NHL — Rangers vs Bruins",      detail: "3rd Period · In Progress",       fans: "18,006", score: "Live" },
-              { img: "https://images.unsplash.com/photo-1566577739112-5180d4bf9390?w=500&auto=format&fit=crop&q=80", sport: "American-Football", match: "NFL — Chiefs vs Eagles",       detail: "4th Quarter · In Progress",      fans: "72,416", score: "Live" },
-            ].map((ev, i) => (
-              <div key={i} className="ev-card">
-                <div className="ev-img-wrap">
-                  <img className="ev-img" src={ev.img} alt={ev.match} />
-                  <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(0,0,0,.55) 0%, transparent 55%)" }} />
-                  <div className="ev-badge ev-badge-sport"><span>{ev.sport}</span></div>
-                  <div className="ev-badge ev-badge-live">
-                    <div className="live-dot" />
-                    <span>Live</span>
-                  </div>
-                  <div className="ev-score"><span>{ev.score}</span></div>
-                </div>
-                <div className="ev-body">
-                  <h3 className="ev-match">{ev.match}</h3>
-                  <p className="ev-detail">{ev.detail}</p>
-                  <div className="ev-footer">
-                    <div className="ev-avatars">
-                      {["var(--accent)", "var(--accent2)", "var(--green)", "#7C3AED"].map((c, j) => (
-                        <div key={j} className="ev-avatar" style={{ background: c }} />
-                      ))}
-                    </div>
-                    <span className="ev-watching">{ev.fans} watching</span>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+     
 
       {/* ═══ FAN CHAT PREVIEW ═════════════════════ */}
-      <section className="chat-section">
-        <div className="chat-inner">
-          <div>
-            <p className="chat-eyebrow">Community</p>
-            <h2 className="chat-h2">
-              YOUR TRIBE<br />IS <span style={{ color: "var(--accent)" }}>WAITING.</span>
-            </h2>
-            <p className="chat-body">
-              Thousands of fans across Nigeria and Canada are already building squads, discovering events, and living sports together. Join the conversation before we go live.
-            </p>
-            <div className="chat-features">
-              {[
-                { icon: "💬", title: "Real-time conversations", desc: "Live match chats that move at the speed of the game" },
-                { icon: "📍", title: "Local event discovery",   desc: "Find and share sports events in your city" },
-                { icon: "🤝", title: "Squad building",          desc: "Find people who share your passion for the sport" },
-              ].map(f => (
-                <div key={f.title} className="chat-feat">
-                  <span className="chat-feat-icon">{f.icon}</span>
-                  <div>
-                    <p className="chat-feat-title">{f.title}</p>
-                    <p className="chat-feat-desc">{f.desc}</p>
-                  </div>
-                </div>
-              ))}
+     <section className="chat-section">
+  <div className="chat-inner">
+    <div>
+      <p className="chat-eyebrow">Community</p>
+      <h2 className="chat-h2">
+        YOUR CLIQ<br />IS <span style={{ color: "var(--accent)" }}>WAITING.</span>
+      </h2>
+      <p className="chat-body">
+        Sports fans across North America are already signing up, finding their cliq, 
+        and getting ready to live sports together. 
+        Join the conversation before we go live
+      </p>
+      <div className="chat-features">
+        {[
+          { icon: "💬", title: "Real-time conversations", desc: "Live match chats that move at the speed of the game" },
+          { icon: "📍", title: "Local event discovery",   desc: "Find and share sports events in your city" },
+          { icon: "🤝", title: "Cliq building",          desc: "Find people who share your passion for the sport" },
+        ].map(f => (
+          <div key={f.title} className="chat-feat">
+            <span className="chat-feat-icon">{f.icon}</span>
+            <div>
+              <p className="chat-feat-title">{f.title}</p>
+              <p className="chat-feat-desc">{f.desc}</p>
             </div>
-            <button className="btn-primary" onClick={() => setWaitlistOpen(true)} style={{ fontSize: 14,margin: '20px 20px', padding: "14px 28px" }}>
-            JOIN THE WAITLIST
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M7 3l4 4-4 4" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round"/></svg>
-          </button>
-          <a href="https://t.me/sportcliq" target="_blank" rel="noopener noreferrer" className="btn-outline" style={{ fontSize: 14, padding: "14px 28px", textDecoration: "none" }}>
-            JOIN THE SQUAD
-          </a>
-          <p className="hero-cta-hint">2,400+ fans already signed up</p>
           </div>
+        ))}
+      </div>
+      <div style={{ display: "flex", flexDirection: "column", gap: "12px", marginTop: "20px", textAlign: "center" }}>
+        <button className="btn-primary" onClick={() => setWaitlistOpen(true)} style={{ fontSize: 14, padding: "14px 28px" }}>
+          JOIN THE WAITLIST
+        </button>
+        <a href="https://t.me/sportcliq" target="_blank" rel="noopener noreferrer" className="btn-outline" style={{ fontSize: 14, padding: "14px 28px", textDecoration: "none" }}>
+          JOIN THE CLIQ ON TELEGRAM
+        </a>
+      </div>
+    </div>
 
-          <div className="chat-ui">
-            <div className="chat-ui-header">
-              <div>
-                <p className="chat-ui-title">FAN FEED</p>
-                <p className="chat-ui-sub">Live · Just now</p>
+    <div className="chat-ui">
+      <div className="chat-ui-header">
+        <div>
+          <p className="chat-ui-title">FAN FEED</p>
+          <p className="chat-ui-sub">Live · Just now</p>
+        </div>
+        <div className="chat-live-badge">
+          <div className="live-dot" />
+          <span>Live</span>
+        </div>
+      </div>
+
+      {[
+        { user: "Emeka O.",  msg: "Super Eagles dominating the midfield! 🦅🔥",         color: "#1447E6", flag: "🇳🇬", time: "now" },
+        { user: "Damola K.", msg: "That pass from Lookman 😭 absolute madness!",         color: "#FF4D00", flag: "🇳🇬", time: "1m" },
+        { user: "Marcus T.", msg: "Watching from Toronto — Lagos send the energy 🙌🏾", color: "#7C3AED", flag: "🇨🇦", time: "2m" },
+        { user: "Aisha B.",  msg: "Goals incoming, I can feel it 🎯 Let's go!",         color: "#15803D", flag: "🇳🇬", time: "3m" },
+      ].map((m, i) => (
+        <div key={i} className="chat-msg">
+          <div className="chat-avatar" style={{ background: m.color }}>{m.user[0]}</div>
+          <div className="chat-bubble">
+            <div className="chat-bubble-meta">
+              <div style={{ display: "flex", alignItems: "center", gap: 5 }}>
+                <span className="chat-bubble-name">{m.user}</span>
+                <span className="chat-bubble-flag">{m.flag}</span>
               </div>
-              <div className="chat-live-badge">
-                <div className="live-dot" />
-                <span>Live</span>
-              </div>
+              <span className="chat-bubble-time">{m.time}</span>
             </div>
-
-            {[
-              { user: "Emeka O.",  msg: "Super Eagles dominating the midfield! 🦅🔥",         color: "#1447E6", flag: "🇳🇬", time: "now" },
-              { user: "Damola K.", msg: "That pass from Lookman 😭 absolute madness!",         color: "#FF4D00", flag: "🇳🇬", time: "1m" },
-              { user: "Marcus T.", msg: "Watching from Toronto — Lagos send the energy 🙌🏾", color: "#7C3AED", flag: "🇨🇦", time: "2m" },
-              { user: "Aisha B.",  msg: "Goals incoming, I can feel it 🎯 Let's go!",         color: "#15803D", flag: "🇳🇬", time: "3m" },
-            ].map((m, i) => (
-              <div key={i} className="chat-msg">
-                <div className="chat-avatar" style={{ background: m.color }}>{m.user[0]}</div>
-                <div className="chat-bubble">
-                  <div className="chat-bubble-meta">
-                    <div style={{ display: "flex", alignItems: "center", gap: 5 }}>
-                      <span className="chat-bubble-name">{m.user}</span>
-                      <span className="chat-bubble-flag">{m.flag}</span>
-                    </div>
-                    <span className="chat-bubble-time">{m.time}</span>
-                  </div>
-                  <p className="chat-bubble-text">{m.msg}</p>
-                </div>
-              </div>
-            ))}
-
-            <div className="chat-input-row">
-              <span className="chat-input-placeholder">Add to the conversation…</span>
-              <div className="chat-send">
-                <svg width="11" height="11" viewBox="0 0 11 11" fill="none"><path d="M2 5.5h7M5.5 2l3.5 3.5L5.5 9" stroke="white" strokeWidth="1.5" strokeLinecap="round"/></svg>
-              </div>
-            </div>
+            <p className="chat-bubble-text">{m.msg}</p>
           </div>
         </div>
-      </section>
+      ))}
+
+      <div className="chat-input-row" onClick={() => window.open("https://t.me/sportcliq", "_blank")} style={{ cursor: "pointer" }}>
+        <span className="chat-input-placeholder">Add to the conversation...</span>
+        <div className="chat-send">
+          <svg width="11" height="11" viewBox="0 0 11 11" fill="none"><path d="M2 5.5h7M5.5 2l3.5 3.5L5.5 9" stroke="white" strokeWidth="1.5" strokeLinecap="round"/></svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* ═══ CTA ══════════════════════════════════ */}
       <section className="cta-section">
@@ -1083,7 +1024,7 @@ export default function SportcliqMinimal() {
                   READY TO JOIN<br />THE <span style={{ color: "var(--accent)" }}>MOVEMENT?</span>
                 </h2>
                 <p className="cta-body">
-                  Thousands of fans in Nigeria and Canada are waiting. Be first when we launch.
+                  Find your cliq. Sports fans across North America are signing up — join the conversation before we go live.
                 </p>
               </div>
               <div className="cta-form">

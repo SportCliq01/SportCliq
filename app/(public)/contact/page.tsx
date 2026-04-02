@@ -1,5 +1,6 @@
 "use client";
 
+import WaitlistModal from "@/app/components/WaitlistModal";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -117,7 +118,7 @@ const TelegramIcon = () => (
 );
 const TwitterIcon = () => (
   <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-    <path d="M3 3l5.5 7L3 17h2l4.5-5.5L14 17h3l-5.8-7.5L17 3h-2l-4 4.8L6 3H3z" fill="var(--ink)" />
+    <path d="M3 3l5.5 7L3 17h2l4.5-5.5L14 17h3l-5.8-7.5L17 3h-2l-4 4.8L6 3H3z" fill="#111110" />
   </svg>
 );
 const InstagramIcon = () => (
@@ -136,7 +137,7 @@ const InstagramIcon = () => (
 );
 const TikTokIcon = () => (
   <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-    <path d="M13 2c.2 1.8 1.2 3 3 3.2v2.2c-1.1 0-2.1-.4-3-.9V13a5 5 0 11-5-5v2.2a2.8 2.8 0 102.8 2.8V2H13z" fill="var(--ink)"/>
+    <path d="M13 2c.2 1.8 1.2 3 3 3.2v2.2c-1.1 0-2.1-.4-3-.9V13a5 5 0 11-5-5v2.2a2.8 2.8 0 102.8 2.8V2H13z" fill="#111110"/>
   </svg>
 );
 const ArrowIcon = () => (
@@ -158,19 +159,19 @@ const offices = [
     flag: "🇳🇬", city: "Lagos", country: "Nigeria",
     address: "Victoria Island, Lagos", timezone: "WAT · UTC+1",
     color: "var(--accent2)",
-    img: "https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?w=600&auto=format&fit=crop&q=80", // soccer
+    img: "https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?w=600&auto=format&fit=crop&q=80",
   },
   {
     flag: "🇨🇦", city: "Toronto", country: "Canada",
     address: "Downtown Toronto, ON", timezone: "EST · UTC-5",
     color: "var(--accent)",
-    img: "https://images.unsplash.com/photo-1580748141549-71748dbe0bdc?w=600&auto=format&fit=crop&q=80", // ice hockey
+    img: "https://images.unsplash.com/photo-1580748141549-71748dbe0bdc?w=600&auto=format&fit=crop&q=80",
   },
   {
     flag: "🇺🇸", city: "New York", country: "USA",
     address: "Manhattan, New York", timezone: "EST · UTC-5",
     color: "#7C3AED",
-    img: "https://images.unsplash.com/photo-1566577739112-5180d4bf9390?w=600&auto=format&fit=crop&q=80", // american football
+    img: "https://images.unsplash.com/photo-1566577739112-5180d4bf9390?w=600&auto=format&fit=crop&q=80",
   },
 ];
 
@@ -196,23 +197,35 @@ export default function ContactPage() {
 
       {/* HERO */}
       <section className="hero-section" style={{ background: "var(--canvas)", borderBottom: "1.5px solid var(--rule)", padding: "72px 40px 64px" }}>
-        <div style={{ maxWidth: 1200, margin: "0 auto" }}>
-          <div className="fu fu1" style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 28 }}>
-            <div className="live-dot" />
-            <span style={{ fontSize: 12, fontWeight: 500, color: "var(--ink2)", letterSpacing: .5 }}>
-              We reply within 24 hours · Mon – Fri
-            </span>
+        <div style={{ maxWidth: 1200, margin: "0 auto", display: "grid", gridTemplateColumns: "1fr 1fr", gap: 72, alignItems: "center" }}>
+          {/* Left - Image */}
+          <Image
+            src="/contact-hero.jpeg"
+            alt="Get In Touch"
+            width={600}
+            height={600}
+            style={{ width: "100%", height: "auto", borderRadius: 16, objectFit: "cover" }}
+            priority
+          />
+          {/* Right - Text */}
+          <div>
+            <div className="fu fu1" style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 28 }}>
+              <div className="live-dot" />
+              <span style={{ fontSize: 12, fontWeight: 500, color: "var(--ink2)", letterSpacing: .5 }}>
+                We reply within 24 hours · Mon – Fri
+              </span>
+            </div>
+            <h1 className="fu fu2" style={{
+              fontFamily: "var(--font-headline)",
+              fontSize: "clamp(56px, 8vw, 104px)",
+              fontWeight: 400, lineHeight: .95, letterSpacing: 1, marginBottom: 28,
+            }}>
+              GET IN<br /><span style={{ color: "var(--accent)" }}>TOUCH.</span>
+            </h1>
+            <p className="fu fu3" style={{ fontSize: 17, color: "var(--ink2)", lineHeight: 1.75, fontWeight: 300, maxWidth: 500 }}>
+              Whether you're a fan, partner, journalist, or just curious — we're always happy to connect. Find us on your favourite platform or send us a message directly.
+            </p>
           </div>
-          <h1 className="fu fu2" style={{
-            fontFamily: "var(--font-headline)",
-            fontSize: "clamp(56px, 8vw, 104px)",
-            fontWeight: 400, lineHeight: .95, letterSpacing: 1, marginBottom: 28,
-          }}>
-            GET IN<br /><span style={{ color: "var(--accent)" }}>TOUCH.</span>
-          </h1>
-          <p className="fu fu3" style={{ fontSize: 17, color: "var(--ink2)", lineHeight: 1.75, fontWeight: 300, maxWidth: 500 }}>
-            Whether you're a fan, partner, journalist, or just curious — we're always happy to connect. Find us on your favourite platform or send us a message directly.
-          </p>
         </div>
       </section>
 
@@ -249,52 +262,6 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* OFFICE LOCATIONS */}
-      <section style={{ padding: "72px 40px 0", background: "var(--white)" }}>
-        <div style={{ maxWidth: 1200, margin: "0 auto" }}>
-          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", marginBottom: 28, paddingBottom: 28, borderBottom: "1.5px solid var(--rule)", flexWrap: "wrap", gap: 12 }}>
-            <div>
-              <p style={{ fontSize: 11, fontWeight: 600, letterSpacing: 2, textTransform: "uppercase", color: "var(--ink3)", marginBottom: 10 }}>Our Locations</p>
-              <h2 style={{ fontFamily: "var(--font-headline)", fontSize: "clamp(30px, 4vw, 46px)", fontWeight: 400, letterSpacing: 1, lineHeight: 1 }}>
-                BUILT FOR <span style={{ color: "var(--accent2)" }}>SPORTS.</span>
-              </h2>
-            </div>
-            <p style={{ fontSize: 14, color: "var(--ink3)", fontWeight: 300, maxWidth: 320, lineHeight: 1.6 }}>
-              From Lagos to Toronto to New York — Sportcliq spans the sports culture wherever fans live.
-            </p>
-          </div>
-
-          <div className="offices-grid" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 16 }}>
-            {offices.map((o) => (
-              <div key={o.city} className="office-card">
-                {/* office card content unchanged */}
-                <div style={{ height: 180, overflow: "hidden", position: "relative" }}>
-                  <img src={o.img} alt={o.city} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
-                  <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(0,0,0,.55) 0%, transparent 60%)" }} />
-                  <div style={{ position: "absolute", top: 14, left: 14 }}>
-                    <span style={{ fontSize: 26 }}>{o.flag}</span>
-                  </div>
-                </div>
-                <div style={{ padding: "20px 22px 24px" }}>
-                  <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 6 }}>
-                    <h3 style={{ fontFamily: "var(--font-headline)", fontSize: 22, fontWeight: 400, letterSpacing: 1 }}>{o.city}</h3>
-                    <span style={{ fontSize: 12, fontWeight: 600, color: o.color }}>{o.country}</span>
-                  </div>
-                  <p style={{ fontSize: 14, color: "var(--ink2)", marginBottom: 10 }}>{o.address}</p>
-                  <div style={{ display: "inline-flex", alignItems: "center", gap: 6, padding: "4px 10px", background: "var(--canvas)", borderRadius: 6, border: "1.5px solid var(--rule)" }}>
-                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
-                      <circle cx="5" cy="5" r="4" stroke="var(--ink3)" strokeWidth="1.2"/>
-                      <path d="M5 3v2l1.5 1.5" stroke="var(--ink3)" strokeWidth="1.2" strokeLinecap="round"/>
-                    </svg>
-                    <span style={{ fontSize: 11, fontWeight: 500, color: "var(--ink3)" }}>{o.timezone}</span>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* CONTACT FORM */}
       <section style={{ padding: "72px 40px 96px", background: "var(--white)" }}>
         <div style={{ maxWidth: 1200, margin: "0 auto", display: "grid", gridTemplateColumns: "1fr 1.15fr", gap: 72, alignItems: "start" }} className="contact-grid">
@@ -308,18 +275,17 @@ export default function ContactPage() {
               Have a proposal, press enquiry, partnership opportunity, or just want to say hi? Fill out the form and we'll get back to you within 24 hours.
             </p>
             <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
-              {[
-                { icon: "✉️", label: "GENERAL",      value: "hello@sportcliq.app",    href: "mailto:hello@sportcliq.app" },
-                { icon: "📣", label: "PRESS",        value: "press@sportcliq.app",    href: "mailto:press@sportcliq.app" },
-                { icon: "🤝", label: "PARTNERSHIPS", value: "partners@sportcliq.app", href: "mailto:partners@sportcliq.app" },
-              ].map((c) => (
-                <div key={c.label} className="email-card">
-                  <span style={{ fontSize: 18 }}>{c.icon}</span>
-                  <div>
-                    <p style={{ fontSize: 11, fontWeight: 600, color: "var(--ink3)", letterSpacing: 1, marginBottom: 2 }}>{c.label}</p>
-                    <a href={c.href} style={{ fontSize: 14, fontWeight: 500, color: "var(--accent)", textDecoration: "none" }}>{c.value}</a>
+              {socials.map((s) => (
+                <a key={s.name} href={s.href} target="_blank" rel="noopener noreferrer" className="email-card" style={{ textDecoration: "none" }}>
+                  <div style={{ width: 42, height: 42, borderRadius: 12, background: s.bg, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
+                    {s.icon}
                   </div>
-                </div>
+                  <div>
+                    <p style={{ fontSize: 11, fontWeight: 600, color: "var(--ink3)", letterSpacing: 1, marginBottom: 2 }}>{s.name}</p>
+                    <p style={{ fontSize: 14, fontWeight: 500, color: "var(--accent)" }}>{s.handle}</p>
+                  </div>
+                  <ArrowIcon />
+                </a>
               ))}
             </div>
           </div>
@@ -381,6 +347,10 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
+
+      {/* WAITLIST MODAL */}
+      {waitlistOpen && <WaitlistModal onClose={() => setWaitlistOpen(false)} />}
+
     </div>
   );
 }

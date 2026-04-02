@@ -127,7 +127,7 @@ export default function WaitlistModal({ onClose }: WaitlistModalProps) {
                   JOIN THE <span style={{ color: "#1447E6" }}>WAITLIST</span>
                 </h2>
                 <p style={{ fontSize: 14, color: "#3D3C39", lineHeight: 1.7, marginBottom: 24 }}>
-                  Be first when Sportcliq launches across Nigeria, Canada & the USA. Early members get exclusive perks.
+                  Be first when Sportcliq launches across..
                 </p>
 
                 <div style={{ display: "flex", alignItems: "center", gap: 12, padding: "12px 14px", background: "#F8F7F4", borderRadius: 10, marginBottom: 24 }}>
@@ -136,9 +136,6 @@ export default function WaitlistModal({ onClose }: WaitlistModalProps) {
                       <div key={i} style={{ width: 24, height: 24, borderRadius: "50%", background: c, border: "2px solid #F8F7F4", marginLeft: i > 0 ? -7 : 0 }} />
                     ))}
                   </div>
-                  <p style={{ fontSize: 13, color: "#3D3C39" }}>
-                    <strong style={{ color: "#111110", fontWeight: 600 }}>2,400+ fans</strong> already on the list
-                  </p>
                 </div>
 
                 <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
