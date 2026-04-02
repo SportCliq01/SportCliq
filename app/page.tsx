@@ -913,7 +913,7 @@ export default function SportcliqMinimal() {
             {[
               { img: "https://images.unsplash.com/photo-1504450758481-7338eba7524a?w=600&auto=format&fit=crop&q=80", label: "Discovery",    title: "EVENT DISCOVERY",     desc: "Find local sports events and watch parties near you." },
               { img: "https://images.unsplash.com/photo-1517649763962-0c623066013b?w=600&auto=format&fit=crop&q=80", label: "Personalized", title: "YOUR FEED",           desc: "Curated to the teams and sports you're most passionate about." },
-              { img: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&auto=format&fit=crop&q=80", label: "Community",    title: "CREATE A CLIQ",      desc: "Create A Cliq Join A Cliq, Find Your Cliq." },
+              { img: "/team.jpeg", label: "Community",    title: "CREATE A CLIQ",      desc: "Create a Cliq Join a Cliq and Find Your Cliq!" },
               { img: "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?w=600&auto=format&fit=crop&q=80", label: "Global",       title: "CROSS-BORDER UNITY", desc: "Sports has no borders. So Join A Cliq!" },
             ].map((f, i) => (
               <div key={i} className="feat-card">
