@@ -787,7 +787,7 @@ export default function SportcliqMinimal() {
 
           <h1 className="hero-h1 fu fu2">
             WHERE FANS<br />FIND THEIR{" "}
-            <span style={{ color: "var(--accent)" }}>CLIQ.</span>
+            <span style={{ color: "var(--accent)" }}>CLIQ!</span>
           </h1>
 
           <div className="hero-sub-row fu fu3">
@@ -842,7 +842,7 @@ export default function SportcliqMinimal() {
               SPORTS HAS<br />NO <span style={{ color: "var(--accent2)" }}>BORDERS.</span>
             </h2>
             <p className="mission-body">
-              Sportcliq is a fan engagement and community platform designed to bring sports enthusiasts together.
+              SportCliq is a fan engagement and community platform designed to bring sports enthusiasts together.
             </p>
             <p className="mission-body">
               We combine real-time conversations, personalized feeds, and local event discovery into one unified experience — built for the culture.
@@ -888,7 +888,7 @@ export default function SportcliqMinimal() {
             <div>
               <p className="features-eyebrow">Platform Features</p>
               <h2 className="features-h2">
-                BUILT FOR THE<br /><span style={{ color: "var(--accent)" }}>REAL FAN.</span>
+                BUILT FOR <br /><span style={{ color: "var(--accent)" }}>REAL FANS.</span>
               </h2>
             </div>
             <p className="features-sub">
@@ -941,7 +941,7 @@ export default function SportcliqMinimal() {
         YOUR CLIQ<br />IS <span style={{ color: "var(--accent)" }}>WAITING.</span>
       </h2>
       <p className="chat-body">
-        Sports fans across Canada are already signing up, finding their cliq, 
+        Sports fans across Canada are already signing up, finding their Cliq, 
         and getting ready to live sports together. 
         Join the conversation before we go live.
       </p>
@@ -1020,10 +1020,10 @@ export default function SportcliqMinimal() {
               <div className="cta-left">
                 <p className="cta-eyebrow">Early Access · Limited Spots</p>
                 <h2 className="cta-h2">
-                  READY TO JOIN<br />THE <span style={{ color: "var(--accent)" }}>MOVEMENT?</span>
+                  READY TO JOIN<br />THE <span style={{ color: "var(--accent)" }}>CLIQ!</span>
                 </h2>
                 <p className="cta-body">
-                  Find your cliq. Sports fans across North America are signing up — join the conversation before we go live.
+                  Find your Cliq. Sports fans across North America are signing up — join the conversation before we go live.
                 </p>
               </div>
               <div className="cta-form">

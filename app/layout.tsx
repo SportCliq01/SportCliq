@@ -3,9 +3,9 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
 export const metadata: Metadata = {
-  title: "Sportcliq — Where Fans Become Squads",
+  title: "SportCliq — Find your Cliq, Feel the Game!",
   description:
-    "Real-time fan conversations, personalized feeds, and local event discovery — built for sports communities across Nigeria, Canada, and beyond.",
+    "Real-time fan conversations, personalized feeds, and local event discovery — built for sports communities across the world.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

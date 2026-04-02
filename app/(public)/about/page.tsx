@@ -514,7 +514,7 @@ export default function AboutPage() {
 
               <FadeUp delay={160}>
                 <p style={{ fontSize: 16, lineHeight: 1.75, marginBottom: 28, maxWidth: 440, fontWeight: 300, color: "var(--color-sq-body)" }}>
-                  Sportcliq was born from a simple idea — fans everywhere deserved a better way to experience sports together. We built the place to make it happen.
+                  SportCliq was born from a simple idea — fans everywhere deserved a better way to experience sports together. We built the place to make it happen.
                 </p>
               </FadeUp>
 
@@ -590,9 +590,9 @@ export default function AboutPage() {
 
         <FadeUp delay={160}>
           <div style={{ display: "flex", flexDirection: "column", gap: 16, fontSize: 15, lineHeight: 1.8, fontWeight: 300, color: "var(--color-sq-body)", marginBottom: 28 }}>
-            <p>Sportcliq was born from a simple idea — sports fans everywhere deserved a better way to experience the game together.</p>
+            <p>SportCliq was born from a simple idea — sports fans everywhere deserved a better way to experience the game together.</p>
             <p>We saw passionate fans in Canada watching the same matches, cheering the same plays, feeling the same highs and lows — but doing it alone. No shared space. No real community. Just group chats and social media noise.</p>
-            <p>So we built the place they deserved. Sportcliq is community-first, real-time, and built for the fans who live and breathe sport.</p>
+            <p>So we built the place they deserved. SportCliq is community-first, real-time, and built for the fans who live and breathe sport.</p>
           </div>
         </FadeUp>
 
@@ -707,7 +707,7 @@ export default function AboutPage() {
                   JOIN THE <span className="cta-heading-accent">MOVEMENT</span>
                 </h2>
                 <p className="cta-body">
-                  Find your cliq. Sports fans across North America are signing up — join the conversation before we go live.
+                  Find your Cliq. Sports fans across North America are signing up — join the conversation before we go live.
                 </p>
                 <div className="cta-buttons">
   <button className="cta-btn-primary" onClick={() => setWaitlistOpen(true)}>

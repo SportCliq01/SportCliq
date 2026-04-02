@@ -35,7 +35,7 @@ const TikTokIcon = () => (
 const socials = [
   { name: "Telegram",    href: "https://t.me/sportcliq",               icon: <TelegramIcon /> },
   { name: "Twitter / X", href: "https://twitter.com/sportcliq_",       icon: <TwitterIcon /> },
-  { name: "Instagram",   href: "https://instagram.com/sportcliq.app_", icon: <InstagramIcon /> },
+  { name: "Instagram",   href: "https://instagram.com/sportcliqofficial", icon: <InstagramIcon /> },
   { name: "TikTok",      href: "https://tiktok.com/@sportcliq",        icon: <TikTokIcon /> },
 ];
 
@@ -100,7 +100,7 @@ export default function Footer() {
       {/* ── Bottom bar ── */}
       <div className="footer-bottom">
         <div className="footer-bottom-inner">
-          <p className="footer-copyright">© 2025 Sportcliq. All rights reserved.</p>
+          <p className="footer-copyright">© 2025 SportCliq. All rights reserved.</p>
           <div className="footer-regions">
             {["🇨🇦",].map((flag) => (
               <span key={flag} className="footer-flag">{flag}</span>

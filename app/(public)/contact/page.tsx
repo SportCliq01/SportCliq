@@ -150,7 +150,7 @@ const ArrowIcon = () => (
 const socials = [
   { name: "Telegram",   handle: "@sportcliq",      href: "https://t.me/sportcliq",                  icon: <TelegramIcon />,  bg: "rgba(0,136,204,.08)",   desc: "Join our community" },
   { name: "Twitter / X",handle: "@sportcliq",      href: "https://twitter.com/sportcliq_",           icon: <TwitterIcon />,   bg: "rgba(17,17,16,.05)",    desc: "Live updates & takes" },
-  { name: "Instagram",  handle: "@sportcliq.app",  href: "https://instagram.com/sportcliq.app_",     icon: <InstagramIcon />, bg: "rgba(220,39,67,.06)",   desc: "Behind the scenes" },
+  { name: "Instagram",  handle: "@sportcliq.app",  href: "https://instagram.com/sportcliqofficial",     icon: <InstagramIcon />, bg: "rgba(220,39,67,.06)",   desc: "Behind the scenes" },
   { name: "TikTok",     handle: "@sportcliq",      href: "https://tiktok.com/@sportcliq",           icon: <TikTokIcon />,    bg: "rgba(17,17,16,.05)",    desc: "Short-form content" },
 ];
 
@@ -310,7 +310,7 @@ export default function ContactPage() {
               NOT READY TO CHAT?{" "}
               <span style={{ color: "var(--accent)" }}>JOIN THE WAITLIST.</span>
             </p>
-            <p style={{ fontSize: 14, color: "var(--ink3)", fontWeight: 300 }}>Be first when Sportcliq goes live in your city.</p>
+            <p style={{ fontSize: 14, color: "var(--ink3)", fontWeight: 300 }}>Be first when SportCliq goes live in your city.</p>
           </div>
           <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
            <button
