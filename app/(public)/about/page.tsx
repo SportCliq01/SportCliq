@@ -1,8 +1,10 @@
 "use client";
 
+
 import Image from "next/image";
 
 import { useEffect, useRef, useState } from "react";
+import WaitlistModal from "@/app/components/WaitlistModal";
 
 /* ── Intersection-observer fade-up hook ─── */
 function useFadeUp(): [React.RefObject<HTMLDivElement | null>, boolean] {
@@ -470,9 +472,19 @@ const STYLES = `
    PAGE
 ════════════════════════════════════════ */
 export default function AboutPage() {
+  const [waitlistOpen, setWaitlistOpenState] = useState(false);
+
+  function setWaitlistOpen(open: boolean) {
+    setWaitlistOpenState(open);
+  }
+
   return (
     <main className="about-root">
       <style>{STYLES}</style>
+
+
+            {waitlistOpen && <WaitlistModal onClose={() => setWaitlistOpen(false)} />}
+
 
       {/* ── HERO ─────────────────────────────────── */}
       <section className="about-section" style={{ background: "#FFFFFF", paddingBottom: 80 }}>
@@ -679,7 +691,6 @@ export default function AboutPage() {
 
 
       {/* ── CTA ─────────────────────────────────── */}
-      {/* ✅ FIXED: rebuilt with CSS classes so z-index stacking works properly */}
       <section className="about-section" style={{ background: "var(--color-sq-surface)", paddingTop: 80, paddingBottom: 80 }}>
         <div className="about-container" style={{ maxWidth: 860 }}>
           <FadeUp>
@@ -699,16 +710,16 @@ export default function AboutPage() {
                   Find your cliq. Sports fans across North America are signing up — join the conversation before we go live.
                 </p>
                 <div className="cta-buttons">
-                  <a href="/contact" className="cta-btn-primary">
-                    Join Waitlist
-                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-                      <path d="M2 7h10M7 3l4 4-4 4" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
-                    </svg>
-                  </a>
-                  <a href="https://t.me/sportcliq" className="cta-btn-secondary">
-                    Explore Platform
-                  </a>
-                </div>
+  <button className="cta-btn-primary" onClick={() => setWaitlistOpen(true)}>
+    Join Waitlist
+    <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+      <path d="M2 7h10M7 3l4 4-4 4" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
+    </svg>
+  </button>
+  <a href="https://t.me/sportcliq" className="cta-btn-secondary">
+    Explore Platform
+  </a>
+</div>
               </div>
             </div>
           </FadeUp>

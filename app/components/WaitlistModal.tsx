@@ -183,6 +183,7 @@ export default function WaitlistModal({ onClose }: WaitlistModalProps) {
             )}
           </div>
         </div>
+        
       </div>
     </>
   );
