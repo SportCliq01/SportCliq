@@ -778,10 +778,12 @@ export default function SportcliqMinimal() {
         
 
         <div className="hero-inner">
-          <div className="hero-label fu fu1">
-            <div className="live-dot" />
-            <span>Launching Soon on Play Store & App Store</span>
-          </div>
+  <div className="hero-label fu fu1">
+    <div className="live-dot" />
+    <span style={{ fontSize: "1.125rem", fontWeight: 700, letterSpacing: "0.01em" }}>
+      Launching Soon on Play Store & App Store
+    </span>
+  </div>
 
           <h1 className="hero-h1 fu fu2">
             WHERE FANS<br />FIND THEIR{" "}
@@ -999,7 +1001,7 @@ export default function SportcliqMinimal() {
       ))}
 
       <div className="chat-input-row" onClick={() => window.open("https://t.me/sportcliq", "_blank")} style={{ cursor: "pointer" }}>
-        <span className="chat-input-placeholder">Join the conversation on Telegram</span>
+        <span className="chat-input-placeholder">click to join the conversation on Telegram</span>
         <div className="chat-send">
           <svg width="11" height="11" viewBox="0 0 11 11" fill="none"><path d="M2 5.5h7M5.5 2l3.5 3.5L5.5 9" stroke="white" strokeWidth="1.5" strokeLinecap="round"/></svg>
         </div>
