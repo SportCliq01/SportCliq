@@ -717,7 +717,7 @@ export default function AboutPage() {
     </svg>
   </button>
   <a href="https://t.me/sportcliq" className="cta-btn-secondary">
-    Explore Platform
+    Join The Cliq on Telegram
   </a>
 </div>
               </div>

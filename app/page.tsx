@@ -780,7 +780,7 @@ export default function SportcliqMinimal() {
         <div className="hero-inner">
           <div className="hero-label fu fu1">
             <div className="live-dot" />
-            <span></span>
+            <span>Launching Soon on Play Store & App Store</span>
           </div>
 
           <h1 className="hero-h1 fu fu2">
@@ -939,15 +939,15 @@ export default function SportcliqMinimal() {
         YOUR CLIQ<br />IS <span style={{ color: "var(--accent)" }}>WAITING.</span>
       </h2>
       <p className="chat-body">
-        Sports fans across North America are already signing up, finding their cliq, 
+        Sports fans across Canada are already signing up, finding their cliq, 
         and getting ready to live sports together. 
-        Join the conversation before we go live
+        Join the conversation before we go live.
       </p>
       <div className="chat-features">
         {[
           { icon: "💬", title: "Real-time conversations", desc: "Live match chats that move at the speed of the game" },
           { icon: "📍", title: "Local event discovery",   desc: "Find and share sports events in your city" },
-          { icon: "🤝", title: "Cliq building",          desc: "Find people who share your passion for the sport" },
+          { icon: "🤝", title: "Cliq building",           desc: "Find people who share your passion for the sport" },
         ].map(f => (
           <div key={f.title} className="chat-feat">
             <span className="chat-feat-icon">{f.icon}</span>
@@ -981,19 +981,16 @@ export default function SportcliqMinimal() {
       </div>
 
       {[
-        { user: "Emeka O.",  msg: "Super Eagles dominating the midfield! 🦅🔥",         color: "#1447E6", flag: "🇳🇬", time: "now" },
-        { user: "Damola K.", msg: "That pass from Lookman 😭 absolute madness!",         color: "#FF4D00", flag: "🇳🇬", time: "1m" },
-        { user: "Marcus T.", msg: "Watching from Toronto — Lagos send the energy 🙌🏾", color: "#7C3AED", flag: "🇨🇦", time: "2m" },
-        { user: "Aisha B.",  msg: "Goals incoming, I can feel it 🎯 Let's go!",         color: "#15803D", flag: "🇳🇬", time: "3m" },
+        { user: "Jordan M.", msg: "Leafs looking dangerous tonight, let's gooo 🍁🔥",      color: "#1447E6", time: "now" },
+        { user: "Priya S.",  msg: "That Raptors play was INSANE 😭 Siakam doing work!",     color: "#FF4D00", time: "1m"  },
+        { user: "Tyler B.",  msg: "Watching from Vancouver — MTL fans you felt that 🙌🏾",  color: "#7C3AED", time: "2m"  },
+        { user: "Chloe R.",  msg: "CF Montréal goal incoming, I can feel it 🎯 Allons-y!",  color: "#15803D", time: "3m"  },
       ].map((m, i) => (
         <div key={i} className="chat-msg">
           <div className="chat-avatar" style={{ background: m.color }}>{m.user[0]}</div>
           <div className="chat-bubble">
             <div className="chat-bubble-meta">
-              <div style={{ display: "flex", alignItems: "center", gap: 5 }}>
-                <span className="chat-bubble-name">{m.user}</span>
-                <span className="chat-bubble-flag">{m.flag}</span>
-              </div>
+              <span className="chat-bubble-name">{m.user}</span>
               <span className="chat-bubble-time">{m.time}</span>
             </div>
             <p className="chat-bubble-text">{m.msg}</p>
@@ -1002,7 +999,7 @@ export default function SportcliqMinimal() {
       ))}
 
       <div className="chat-input-row" onClick={() => window.open("https://t.me/sportcliq", "_blank")} style={{ cursor: "pointer" }}>
-        <span className="chat-input-placeholder">Add to the conversation...</span>
+        <span className="chat-input-placeholder">Join the conversation on Telegram</span>
         <div className="chat-send">
           <svg width="11" height="11" viewBox="0 0 11 11" fill="none"><path d="M2 5.5h7M5.5 2l3.5 3.5L5.5 9" stroke="white" strokeWidth="1.5" strokeLinecap="round"/></svg>
         </div>

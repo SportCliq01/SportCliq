@@ -313,19 +313,19 @@ export default function ContactPage() {
             <p style={{ fontSize: 14, color: "var(--ink3)", fontWeight: 300 }}>Be first when Sportcliq goes live in your city.</p>
           </div>
           <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
-            <button
-              onClick={() => setWaitlistOpen(true)}
-              style={{
-                display: "inline-flex", alignItems: "center", gap: 8,
-                background: "transparent", color: "var(--ink)",
-                fontFamily: "var(--font-headline)", fontSize: 13, letterSpacing: 1,
-                padding: "14px 28px", borderRadius: 8, cursor: "pointer",
-                border: "1.5px solid var(--ink)", whiteSpace: "nowrap",
-                transition: "border-color .2s, color .2s",
-              }}
-            >
-              JOIN WAITLIST
-            </button>
+           <button
+  onClick={() => setWaitlistOpen(true)}
+  style={{
+    display: "inline-flex", alignItems: "center", gap: 8,
+    background: "#111110", color: "#ffffff",
+    fontFamily: "var(--font-headline)", fontSize: 13, letterSpacing: 1,
+    padding: "14px 28px", borderRadius: 8, cursor: "pointer",
+    border: "1.5px solid #111110", whiteSpace: "nowrap",
+    transition: "background .2s, color .2s",
+  }}
+>
+  JOIN WAITLIST
+</button>
             
             <a
               href="https://t.me/sportcliq"
