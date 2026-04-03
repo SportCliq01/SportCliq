@@ -845,7 +845,7 @@ export default function SportcliqMinimal() {
               SportCliq gives every fan a place to join the conversation, celebrate the game, and discover events near them. 
             </p>
             <p className="mission-body">
-              We create moments where passion meets connection and every fan feels part of something larger than themselves.We create moments where passion meets connection and every fan feels part of something larger than themselves.
+              We create moments where passion meets connection and every fan feels part of something larger than themselves.
             </p>
            
           </div>

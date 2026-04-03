@@ -272,8 +272,7 @@ export default function ContactPage() {
               FIND US ON<br /><span style={{ color: "var(--accent)" }}>SOCIALS.</span>
             </h2>
             <p style={{ fontSize: 15, color: "var(--ink2)", lineHeight: 1.8, fontWeight: 300, marginBottom: 36 }}>
-              Whether you're a fan, partner, journalist, or just curious — we're always happy to connect. Find us on your favourite platform and reach out directly.
-            </p>
+              From fans to founders, we want to hear from you. Slide into our DMs, drop a comment, or just come say hi - we're always online and always listening.            </p>
             <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
               {socials.map((s) => (
                 <a key={s.name} href={s.href} target="_blank" rel="noopener noreferrer" className="email-card" style={{ textDecoration: "none" }}>
