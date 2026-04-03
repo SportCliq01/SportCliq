@@ -223,7 +223,7 @@ export default function ContactPage() {
               GET IN<br /><span style={{ color: "var(--accent)" }}>TOUCH.</span>
             </h1>
             <p className="fu fu3" style={{ fontSize: 17, color: "var(--ink2)", lineHeight: 1.75, fontWeight: 300, maxWidth: 500 }}>
-              Whether you're a fan, partner, journalist, or just curious — we're always happy to connect. Find us on your favourite platform or send us a message directly.
+              Whether you're a fan, partner, journalist, or just curious - we're always happy to connect. Find us on your favourite platform or send us a message directly.
             </p>
           </div>
         </div>
@@ -267,12 +267,12 @@ export default function ContactPage() {
         <div style={{ maxWidth: 1200, margin: "0 auto", display: "grid", gridTemplateColumns: "1fr 1.15fr", gap: 72, alignItems: "start" }} className="contact-grid">
           {/* Left - Text */}
           <div className="fu fu2">
-            <p style={{ fontSize: 11, fontWeight: 600, letterSpacing: 2, textTransform: "uppercase", color: "var(--ink3)", marginBottom: 20 }}>Direct Contact</p>
+            <p style={{ fontSize: 11, fontWeight: 600, letterSpacing: 2, textTransform: "uppercase", color: "var(--ink3)", marginBottom: 20 }}>Get In Touch</p>
             <h2 style={{ fontFamily: "var(--font-headline)", fontSize: "clamp(34px, 4vw, 52px)", fontWeight: 400, letterSpacing: 1, lineHeight: 1, marginBottom: 20 }}>
-              SEND US A<br /><span style={{ color: "var(--accent)" }}>MESSAGE.</span>
+              FIND US ON<br /><span style={{ color: "var(--accent)" }}>SOCIALS.</span>
             </h2>
             <p style={{ fontSize: 15, color: "var(--ink2)", lineHeight: 1.8, fontWeight: 300, marginBottom: 36 }}>
-              Have a proposal, press enquiry, partnership opportunity, or just want to say hi? Fill out the form and we'll get back to you within 24 hours.
+              Whether you're a fan, partner, journalist, or just curious — we're always happy to connect. Find us on your favourite platform and reach out directly.
             </p>
             <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
               {socials.map((s) => (

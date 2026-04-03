@@ -63,7 +63,7 @@ export default function Footer() {
           </div>
 
           <p className="footer-tagline">
-            Real-time fan conversations, personalized feeds, and local event discovery — built for the culture.
+            Real-time fan conversations, personalized feeds, and local event discovery - built for the culture.
           </p>
 
           <div className="footer-socials">

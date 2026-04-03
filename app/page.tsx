@@ -29,13 +29,13 @@ function Counter({ to, suffix = "" }: { to: number; suffix?: string }) {
 /* ── Ticker ───────────────────────────────────── */
 function Ticker() {
   const items = [
-    "⚽ Super Eagles 2–0 Ivory Coast · 71ʼ",
+    "⚽ Super Eagles 2-0 Ivory Coast · 71ʼ",
     "🏀 Lagos Ballers lead Raptors 905 · Q3",
     "🏃 Omolara Alli wins 100m heat · Diamond League",
     "🏉 Nigeria Rugby secures AFCON qualifier",
     "⚽ AFCON 2025 draw confirmed · Abuja & Lagos",
     "🏏 Nigeria Cricket advances to Super 6",
-    "🏀 NBL Finals — Lagos & Abuja dates announced",
+    "🏀 NBL Finals - Lagos & Abuja dates announced",
   ];
   const doubled = [...items, ...items];
   return (
@@ -792,7 +792,7 @@ export default function SportcliqMinimal() {
 
           <div className="hero-sub-row fu fu3">
             <p>
-              Real-time fan conversations, personalized sports feeds, and local event discovery — one platform built for the culture.
+              Real-time fan conversations, personalized sports feeds, and local event discovery  one platform built for the culture.
             </p>
             <div className="hero-cta">
               <button className="btn-primary" onClick={() => setWaitlistOpen(true)} style={{ fontSize: 14, padding: "14px 28px" }}>
@@ -842,10 +842,10 @@ export default function SportcliqMinimal() {
               SPORTS HAS<br />NO <span style={{ color: "var(--accent2)" }}>BORDERS.</span>
             </h2>
             <p className="mission-body">
-              SportCliq is a fan engagement and community platform designed to bring sports enthusiasts together.
+              SportCliq gives every fan a place to join the conversation, celebrate the game, and discover events near them. 
             </p>
             <p className="mission-body">
-              We combine real-time conversations, personalized feeds, and local event discovery into one unified experience — built for the culture.
+              We create moments where passion meets connection and every fan feels part of something larger than themselves.We create moments where passion meets connection and every fan feels part of something larger than themselves.
             </p>
            
           </div>
@@ -892,7 +892,7 @@ export default function SportcliqMinimal() {
               </h2>
             </div>
             <p className="features-sub">
-              Everything you need to live, breathe, and share sports — in one clean, unified experience.
+              Everything you need to live, breathe, and share sports - in one clean, unified experience.
             </p>
           </div>
 
@@ -941,9 +941,8 @@ export default function SportcliqMinimal() {
         YOUR CLIQ<br />IS <span style={{ color: "var(--accent)" }}>WAITING.</span>
       </h2>
       <p className="chat-body">
-        Sports fans across Canada are already signing up, finding their Cliq, 
-        and getting ready to live sports together. 
-        Join the conversation before we go live.
+        Join fans from across Canada to share your passion, connect with the community,
+         and feel every moment of the game.
       </p>
       <div className="chat-features">
         {[
@@ -985,7 +984,7 @@ export default function SportcliqMinimal() {
       {[
         { user: "Jordan M.", msg: "Leafs looking dangerous tonight, let's gooo 🍁🔥",      color: "#1447E6", time: "now" },
         { user: "Priya S.",  msg: "That Raptors play was INSANE 😭 Siakam doing work!",     color: "#FF4D00", time: "1m"  },
-        { user: "Tyler B.",  msg: "Watching from Vancouver — MTL fans you felt that 🙌🏾",  color: "#7C3AED", time: "2m"  },
+        { user: "Tyler B.",  msg: "Watching from Vancouver - MTL fans you felt that 🙌🏾",  color: "#7C3AED", time: "2m"  },
         { user: "Chloe R.",  msg: "CF Montréal goal incoming, I can feel it 🎯 Allons-y!",  color: "#15803D", time: "3m"  },
       ].map((m, i) => (
         <div key={i} className="chat-msg">
@@ -1014,7 +1013,7 @@ export default function SportcliqMinimal() {
       <section className="cta-section">
         <div className="cta-inner">
           <div className="cta-card">
-            <img className="cta-bg" src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=1600&auto=format&fit=crop&q=80" alt="Stadium" />
+            <img className="cta-bg" src="/" alt="Stadium" />
             <div className="cta-overlay" />
             <div className="cta-content">
               <div className="cta-left">
@@ -1023,7 +1022,7 @@ export default function SportcliqMinimal() {
                   READY TO JOIN<br />THE <span style={{ color: "var(--accent)" }}>CLIQ!</span>
                 </h2>
                 <p className="cta-body">
-                  Find your Cliq. Sports fans across North America are signing up — join the conversation before we go live.
+                  Find your Cliq. Sports fans across North America are signing up - join the conversation before we go live.
                 </p>
               </div>
               <div className="cta-form">

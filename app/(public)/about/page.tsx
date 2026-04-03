@@ -514,7 +514,7 @@ export default function AboutPage() {
 
               <FadeUp delay={160}>
                 <p style={{ fontSize: 16, lineHeight: 1.75, marginBottom: 28, maxWidth: 440, fontWeight: 300, color: "var(--color-sq-body)" }}>
-                  SportCliq was born from a simple idea — fans everywhere deserved a better way to experience sports together. We built the place to make it happen.
+                  SportCliq was born from a simple belief: sports are meant to be shared. Fans around the world watch the same matches, celebrate the same plays, and feel the same highs and lows, yet too often they do it alone. Existing platforms create noise but no real connection.
                 </p>
               </FadeUp>
 
@@ -561,8 +561,8 @@ export default function AboutPage() {
         </div>
       </section> */}
 
-      {/* ── STORY ───────────────────────────────── */}
-     <section className="about-section" style={{ background: "var(--color-sq-bg)", paddingTop: 96, paddingBottom: 96 }}>
+     {/* ── STORY ───────────────────────────────── */}
+<section className="about-section" style={{ background: "var(--color-sq-bg)", paddingTop: 96, paddingBottom: 96 }}>
   <div className="about-container">
     <div className="story-grid">
       <FadeUp>
@@ -580,29 +580,63 @@ export default function AboutPage() {
       </FadeUp>
 
       <div>
+        {/* ── About Header ── */}
         <FadeUp delay={80}>
-          <p style={{ fontSize: 11, fontWeight: 600, letterSpacing: "0.15em", textTransform: "uppercase", color: "var(--color-sq-blue)", marginBottom: 16 }}>THE ORIGIN</p>
-          <h2 style={{ fontFamily: "var(--font-headline)", fontSize: "clamp(34px, 5vw, 60px)", letterSpacing: "0.02em", color: "var(--color-sq-ink)", lineHeight: 1, marginBottom: 24 }}>
+          <p style={{ fontSize: 11, fontWeight: 600, letterSpacing: "0.15em", textTransform: "uppercase", color: "var(--color-sq-blue)", marginBottom: 10 }}>
+            ABOUT SPORTCLIQ
+          </p>
+          <h2 style={{ fontFamily: "var(--font-headline)", fontSize: "clamp(28px, 4vw, 48px)", letterSpacing: "0.02em", color: "var(--color-sq-ink)", lineHeight: 1, marginBottom: 16 }}>
             BORN FROM THE{" "}
             <span style={{ color: "#FF6B00" }}>STANDS</span>
           </h2>
         </FadeUp>
 
+        {/* ── About Body ── */}
         <FadeUp delay={160}>
-          <div style={{ display: "flex", flexDirection: "column", gap: 16, fontSize: 15, lineHeight: 1.8, fontWeight: 300, color: "var(--color-sq-body)", marginBottom: 28 }}>
-            <p>SportCliq was born from a simple idea — sports fans everywhere deserved a better way to experience the game together.</p>
-            <p>We saw passionate fans in Canada watching the same matches, cheering the same plays, feeling the same highs and lows — but doing it alone. No shared space. No real community. Just group chats and social media noise.</p>
-            <p>So we built the place they deserved. SportCliq is community-first, real-time, and built for the fans who live and breathe sport.</p>
+          <div style={{ display: "flex", flexDirection: "column", gap: 10, fontSize: 13, lineHeight: 1.7, fontWeight: 300, color: "var(--color-sq-body)", marginBottom: 20 }}>
+            <p>SportCliq was born from a simple belief: sports are meant to be shared. Fans around the world watch the same matches, celebrate the same plays, and feel the same highs and lows, yet too often they do it alone. Existing platforms create noise but no real connection.</p>
+            <p>We are building the solution. SportCliq will be a community-first, real-time platform designed for fans who live and breathe sports. Every conversation, every shared moment, and every game will have a space to be experienced together.</p>
           </div>
         </FadeUp>
 
-        <FadeUp delay={240}>
-          <div style={{ display: "flex", alignItems: "flex-start", gap: 16, padding: 20, borderRadius: 16, border: "1.5px solid var(--color-sq-border)", background: "var(--color-sq-surface)" }}>
-            <div style={{ width: 40, height: 40, borderRadius: 12, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 18, flexShrink: 0, background: "rgba(0,87,255,0.1)" }}>🎯</div>
-            <div>
-              <p style={{ fontSize: 13, fontWeight: 600, marginBottom: 4, color: "var(--color-sq-ink)" }}>Where We're Starting</p>
-              <p style={{ fontSize: 12, lineHeight: 1.6, color: "var(--color-sq-body)" }}>Launching in Canada — building the foundation for a fan community that's real-time, sport-agnostic, and built to grow.</p>
+        {/* ── Vision Header ── */}
+        <FadeUp delay={220}>
+          <p style={{ fontSize: 11, fontWeight: 600, letterSpacing: "0.15em", textTransform: "uppercase", color: "var(--color-sq-blue)", marginBottom: 10 }}>
+            VISION
+          </p>
+        </FadeUp>
+
+        {/* ── Vision Cards ── */}
+        <FadeUp delay={300}>
+          <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+
+            {/* Canada */}
+            <div style={{ display: "flex", alignItems: "flex-start", gap: 12, padding: "14px 16px", borderRadius: 14, border: "1.5px solid var(--color-sq-border)", background: "var(--color-sq-surface)" }}>
+              <div style={{ width: 34, height: 34, borderRadius: 10, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 16, flexShrink: 0, background: "rgba(0,87,255,0.1)" }}>🍁</div>
+              <div>
+                <p style={{ fontSize: 12, fontWeight: 600, marginBottom: 3, color: "var(--color-sq-ink)" }}>Canada: Our Launch Point</p>
+                <p style={{ fontSize: 11.5, lineHeight: 1.6, color: "var(--color-sq-body)", margin: 0 }}>SportCliq will launch in Canada, establishing a community where fans find their Cliq, join live conversations, and celebrate every play together. This is the foundation of a real-time, fan-first platform designed for passionate sports enthusiasts.</p>
+              </div>
             </div>
+
+            {/* Regional Expansion */}
+            <div style={{ display: "flex", alignItems: "flex-start", gap: 12, padding: "14px 16px", borderRadius: 14, border: "1.5px solid var(--color-sq-border)", background: "var(--color-sq-surface)" }}>
+              <div style={{ width: 34, height: 34, borderRadius: 10, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 16, flexShrink: 0, background: "rgba(255,107,0,0.1)" }}>🌐</div>
+              <div>
+                <p style={{ fontSize: 12, fontWeight: 600, marginBottom: 3, color: "var(--color-sq-ink)" }}>Regional Expansion</p>
+                <p style={{ fontSize: 11.5, lineHeight: 1.6, color: "var(--color-sq-body)", margin: 0 }}>Following Canada, SportCliq will grow across North America, Europe, Africa, and Asia. Fans in these regions will connect, share local sports culture, and experience games together as part of a larger, coordinated network that unites global sports communities.</p>
+              </div>
+            </div>
+
+            {/* Global Vision */}
+            <div style={{ display: "flex", alignItems: "flex-start", gap: 12, padding: "14px 16px", borderRadius: 14, border: "1.5px solid var(--color-sq-border)", background: "var(--color-sq-surface)" }}>
+              <div style={{ width: 34, height: 34, borderRadius: 10, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 16, flexShrink: 0, background: "rgba(0,87,255,0.08)" }}>🏆</div>
+              <div>
+                <p style={{ fontSize: 12, fontWeight: 600, marginBottom: 3, color: "var(--color-sq-ink)" }}>Global Vision</p>
+                <p style={{ fontSize: 11.5, lineHeight: 1.6, color: "var(--color-sq-body)", margin: 0 }}>Our ultimate goal is to become the home for sports fans worldwide. Every city, league, and game will have a place where fans connect, celebrate, and share their passion. SportCliq will make it impossible for any fan to cheer alone — and redefine how the world experiences sports.</p>
+              </div>
+            </div>
+
           </div>
         </FadeUp>
       </div>
@@ -625,9 +659,9 @@ export default function AboutPage() {
           <div className="values-grid">
             {[
               { icon: "🌍", title: "COMMUNITY FIRST",  desc: "Every decision starts with the fan. We build features that bring people together, not just engagement metrics.", accent: "#0057FF" },
-              { icon: "⚡", title: "REAL-TIME ENERGY", desc: "Sports are alive. Our platform moves at the pace of the game — no delays, no lag, no missing the moment.",    accent: "#FF6B00" },
-              { icon: "🤝", title: "CULTURE IS CORE",  desc: "We don't just cover sports — we celebrate the culture around them. From chants to banter to local legends.",   accent: "#00E87A" },
-              { icon: "🌐", title: "NO BORDERS",       desc: "We're building the ultimate home for sports fans — a place where passion meets community and every voice counts. Welcome to the Cliq.",        accent: "#7B2FFF" },
+              { icon: "⚡", title: "REAL-TIME ENERGY", desc: "Sports are alive. Our platform moves at the pace of the game - no delays, no lag, no missing the moment.",    accent: "#FF6B00" },
+              { icon: "🤝", title: "CULTURE IS CORE",  desc: "We don't just cover sports - we celebrate the culture around them. From chants to banter to local legends.",   accent: "#00E87A" },
+              { icon: "🌐", title: "NO BORDERS",       desc: "We're building the ultimate home for sports fans - a place where passion meets community and every voice counts. Welcome to the Cliq.",        accent: "#7B2FFF" },
               { icon: "📍", title: "LOCAL MATTERS",    desc: "Global vibes, local roots. Event discovery is hyper-local so you never miss what's happening in your city.",    accent: "#00D4FF" },
               { icon: "🚀", title: "BUILT TO SCALE",   desc: "Building a Platform For every sport Lover In The world.",     accent: "#FFD600" },
             ].map((v, i) => (
@@ -648,11 +682,11 @@ export default function AboutPage() {
             <p style={{ fontSize: 11, fontWeight: 600, letterSpacing: "0.15em", textTransform: "uppercase", color: "var(--color-sq-muted)", marginBottom: 24 }}>Our Mission</p>
             <blockquote style={{ fontFamily: "var(--font-headline)", fontSize: "clamp(22px, 4vw, 46px)", letterSpacing: "0.03em", color: "", lineHeight: 1.15, marginBottom: 32 }}>
               "TO UNITE SPORTS FANS ACROSS{" "} &{" "}
-              <span style={{ color: "#00E87A" }}>BEYOND</span> — ONE <span style={{ color: "#0057ff" }}>CLIQ </span>
+              <span style={{ color: "#00E87A" }}>BEYOND</span> - ONE <span style={{ color: "#0057ff" }}>CLIQ </span>
                AT A TIME."
             </blockquote>
             <p style={{ fontSize: 15, fontWeight: 300, lineHeight: 1.75, color: "var(--color-sq-muted)", maxWidth: 560, margin: "0 auto" }}>
-              The Platform focuses on combining real-time fan conversations, personalised feeds, and local event discovery into one unified experience — validating community-driven engagement at scale.
+              The Platform focuses on combining real-time fan conversations, personalised feeds, and local event discovery into one unified experience - validating community-driven engagement at scale.
             </p>
           </FadeUp>
         </div>
@@ -695,19 +729,19 @@ export default function AboutPage() {
         <div className="about-container" style={{ maxWidth: 860 }}>
           <FadeUp>
             <div className="cta-card">
-              {/* Background layers — z-index 1, behind content */}
+              {/* Background layers - z-index 1, behind content */}
               <div className="cta-orb-1" />
               <div className="cta-orb-2" />
               <div className="cta-grid" />
 
-              {/* Content — z-index 2, always on top */}
+              {/* Content - z-index 2, always on top */}
               <div className="cta-card-content">
                 <p className="cta-eyebrow">Be Part of the Story</p>
                 <h2 className="cta-heading">
-                  JOIN THE <span className="cta-heading-accent">MOVEMENT</span>
+                  JOIN THE <span className="cta-heading-accent">CLIQ</span>
                 </h2>
                 <p className="cta-body">
-                  Find your Cliq. Sports fans across North America are signing up — join the conversation before we go live.
+                  Find your Cliq. Sports fans across North America are signing up - join the conversation before we go live.
                 </p>
                 <div className="cta-buttons">
   <button className="cta-btn-primary" onClick={() => setWaitlistOpen(true)}>
