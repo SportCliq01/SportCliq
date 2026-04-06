@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
 export const metadata: Metadata = {
-  title: "SportCliq — Find your Cliq, Feel the Game!",
+  title: "SportCliq - Find your Cliq, Feel the Game!",
   description:
     "Real-time fan conversations, personalized feeds, and local event discovery — built for sports communities across the world.",
 };
