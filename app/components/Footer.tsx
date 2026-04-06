@@ -55,11 +55,11 @@ export default function Footer() {
         <div className="footer-brand">
           <div className="footer-logo">
             <div className="footer-logo-icon">
-              <Image src="/logo-white.png" alt="Sportcliq logo" width={18} height={18} />
+              <Image src="/blue-logo-text.svg" alt="Sportcliq logo" width={88} height={78} />
             </div>
-            <span className="footer-logo-text">
+            {/* <span className="footer-logo-text">
               SPORT<span style={{ color: "#0057FF" }}>CLIQ</span>
-            </span>
+            </span> */}
           </div>
 
           <p className="footer-tagline">
@@ -140,10 +140,10 @@ export default function Footer() {
         }
 
         .footer-logo-icon {
-          width: 34px;
-          height: 34px;
+          width: 90px;
+          height: 78px;
           border-radius: 10px;
-          background: #0057FF;
+          background: none;
           display: flex;
           align-items: center;
           justify-content: center;

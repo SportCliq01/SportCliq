@@ -50,11 +50,11 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="navbar-logo">
             <div className="navbar-logo-icon">
-              <Image src="/logo-white.png" alt="Logo" width={16} height={16} />
+              <Image src="/blue-logo.svg" alt="Logo" width={36} height={36} />
             </div>
-            <span className="navbar-logo-text">
+            {/* <span className="navbar-logo-text">
               SPORT<span style={{ color: "#0057FF" }}>CLIQ</span>
-            </span>
+            </span> */}
           </Link>
 
           {/* Desktop nav */}
@@ -178,19 +178,21 @@ export default function Navbar() {
           width: 34px;
           height: 34px;
           border-radius: 10px;
-          background: #0057FF;
+          background: none;
           display: flex;
           align-items: center;
           justify-content: center;
           flex-shrink: 0;
         }
-
+         /* 
         .navbar-logo-text {
           font-family: 'Anton', sans-serif;
           font-size: 20px;
           letter-spacing: 1px;
           color: #0D1520;
         }
+
+        */
 
         /* ── Desktop nav ────────────────────── */
         .navbar-links {
