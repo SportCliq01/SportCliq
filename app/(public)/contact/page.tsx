@@ -151,7 +151,7 @@ const socials = [
   { name: "Telegram",   handle: "@sportcliq",      href: "https://t.me/sportcliq",                  icon: <TelegramIcon />,  bg: "rgba(0,136,204,.08)",   desc: "Join our community" },
   { name: "Twitter / X",handle: "@sportcliq",      href: "https://twitter.com/sportcliq_",           icon: <TwitterIcon />,   bg: "rgba(17,17,16,.05)",    desc: "Live updates & takes" },
   { name: "Instagram",  handle: "@sportcliqofficial",  href: "https://instagram.com/sportcliqofficial",     icon: <InstagramIcon />, bg: "rgba(220,39,67,.06)",   desc: "Behind the scenes" },
-  { name: "TikTok",     handle: "@sportcliq",      href: "https://tiktok.com/@sportcliq",           icon: <TikTokIcon />,    bg: "rgba(17,17,16,.05)",    desc: "Short-form content" },
+  { name: "TikTok",     handle: "@sportcliq",      href: "https://tiktok.com/@sportcliqofficial",           icon: <TikTokIcon />,    bg: "rgba(17,17,16,.05)",    desc: "Short-form content" },
 ];
 
 const offices = [

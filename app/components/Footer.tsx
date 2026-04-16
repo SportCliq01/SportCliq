@@ -36,7 +36,7 @@ const socials = [
   { name: "Telegram",    href: "https://t.me/sportcliq",               icon: <TelegramIcon /> },
   { name: "Twitter / X", href: "https://twitter.com/sportcliq_",       icon: <TwitterIcon /> },
   { name: "Instagram",   href: "https://instagram.com/sportcliqofficial", icon: <InstagramIcon /> },
-  { name: "TikTok",      href: "https://tiktok.com/@sportcliq",        icon: <TikTokIcon /> },
+  { name: "TikTok",      href: "https://tiktok.com/@sportcliqofficial",        icon: <TikTokIcon /> },
 ];
 
 const cols: Record<string, { label: string; href: string }[]> = {
