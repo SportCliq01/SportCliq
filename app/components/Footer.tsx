@@ -39,9 +39,16 @@ const socials = [
   { name: "TikTok",      href: "https://tiktok.com/@sportcliq",        icon: <TikTokIcon /> },
 ];
 
-const cols: Record<string, string[]> = {
-  Company: ["About", "Contact"],
-  Legal:   ["Privacy Policy", "Terms of Use", "Cookie Policy"],
+const cols: Record<string, { label: string; href: string }[]> = {
+  Company: [
+    { label: "About",   href: "/about" },
+    { label: "Contact", href: "/contact" },
+  ],
+  Legal: [
+    { label: "Privacy Policy", href: "/privacy" },
+    { label: "Terms of Use",   href: "/terms" },
+    { label: "Cookie Policy",  href: "/cookies" },
+  ],
 };
 
 export default function Footer() {
@@ -84,12 +91,12 @@ export default function Footer() {
 
         {/* Link cols */}
         <div className="footer-link-cols">
-          {Object.entries(cols).map(([heading, links]) => (
+       {Object.entries(cols).map(([heading, links]) => (
             <div key={heading} className="footer-col">
               <p className="footer-col-heading">{heading}</p>
               <div className="footer-col-links">
                 {links.map((l) => (
-                  <a key={l} href="#" className="footer-col-link">{l}</a>
+                  <a key={l.label} href={l.href} className="footer-col-link">{l.label}</a>
                 ))}
               </div>
             </div>
