@@ -514,7 +514,7 @@ export default function AboutPage() {
 
               <FadeUp delay={160}>
                 <p style={{ fontSize: 16, lineHeight: 1.75, marginBottom: 28, maxWidth: 440, fontWeight: 300, color: "var(--color-sq-body)" }}>
-                  SportCliq is a fan engagement and community platform designed to bring sports enthusiasts together. We combine real-time conversations, personalized feeds, and local event discovery into one unified experience - built for the culture.
+                  SportCliq is a fan engagement and community platform designed to bring sports enthusiasts together. We combine real-time conversations, personalized feeds, sports trivia and local event discovery into one unified experience - built for the culture.
                 </p>
               </FadeUp>
 
