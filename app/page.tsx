@@ -917,7 +917,7 @@ export default function SportcliqMinimal() {
       </div>
 
       <div className="feat-card" style={{ gridColumn: "span 2", gridRow: "span 2" }}>
-        <img className="feat-img" src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&auto=format&fit=crop&q=80" alt="Fan prizes" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+        <img className="feat-img" src="/cl.jpg" alt="Fan prizes" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
         <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(0,0,0,.7) 0%, transparent 50%)" }} />
         <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, padding: "24px 22px" }}>
           <p style={{ fontSize: 10, fontWeight: 600, letterSpacing: 1.5, textTransform: "uppercase", color: "rgba(255,255,255,.6)", marginBottom: 5 }}>Prizes</p>
