@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import WaitlistModal from "./components/WaitlistModal";
+import FeaturesSection from "./components/Features";
 
 /* ── Counter ─────────────────────────────────── */
 function Counter({ to, suffix = "" }: { to: number; suffix?: string }) {
@@ -882,70 +883,7 @@ export default function SportcliqMinimal() {
       </section> */}
 
       {/* ═══ FEATURES ═════════════════════════════ */}
-      <section className="features">
-  <div className="features-inner">
-    <div className="features-header">
-      <div>
-        <p className="features-eyebrow">Platform Features</p>
-        <h2 className="features-h2">
-          BUILT FOR <br /><span style={{ color: "var(--accent)" }}>REAL FANS.</span>
-        </h2>
-      </div>
-      <p className="features-sub">
-        Everything you need to live, breathe, and share sports - in one clean, unified experience.
-      </p>
-    </div>
-
-    <div style={{
-      display: "grid",
-      gridTemplateColumns: "1fr 1fr 1fr 1fr",
-      gridTemplateRows: "260px 260px",
-      gap: "14px"
-    }}>
-
-      <div className="feat-card" style={{ gridColumn: "span 2", gridRow: "span 2" }}>
-        <img className="feat-img" src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=800&auto=format&fit=crop&q=80" alt="Fan feed" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
-        <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(0,0,0,.65) 0%, transparent 55%)" }} />
-        <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, padding: 28 }}>
-          <div style={{ display: "inline-flex", alignItems: "center", gap: 6, marginBottom: 10 }}>
-            <div className="live-dot" />
-            <span style={{ fontSize: 11, fontWeight: 600, color: "#fff", letterSpacing: .5 }}>Real-time</span>
-          </div>
-          <h3 style={{ fontFamily: "var(--font-headline)", fontSize: 28, fontWeight: 400, color: "#fff", letterSpacing: 1, marginBottom: 8, lineHeight: 1.1 }}>REAL-TIME FAN FEED</h3>
-          <p style={{ fontSize: 13, color: "rgba(255,255,255,.72)", lineHeight: 1.6, maxWidth: 280 }}>Live match conversations as they unfold. React and vibe with thousands of fans simultaneously.</p>
-        </div>
-      </div>
-
-      <div className="feat-card" style={{ gridColumn: "span 2", gridRow: "span 2" }}>
-        <img className="feat-img" src="/cl.jpg" alt="Fan prizes" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
-        <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(0,0,0,.7) 0%, transparent 50%)" }} />
-        <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, padding: "24px 22px" }}>
-          <p style={{ fontSize: 10, fontWeight: 600, letterSpacing: 1.5, textTransform: "uppercase", color: "rgba(255,255,255,.6)", marginBottom: 5 }}>Prizes</p>
-          <h3 style={{ fontFamily: "var(--font-headline)", fontSize: 22, fontWeight: 400, color: "#fff", letterSpacing: 1, marginBottom: 6 }}>PARTICIPATE TO WIN</h3>
-          <p style={{ fontSize: 13, color: "rgba(255,255,255,.65)", lineHeight: 1.6 }}>Join daily, weekly, or monthly trivia to stand a chance to win amazing prizes.</p>
-        </div>
-      </div>
-
-      {[
-        { img: "https://images.unsplash.com/photo-1504450758481-7338eba7524a?w=600&auto=format&fit=crop&q=80", label: "Discovery",    title: "EVENT DISCOVERY",     desc: "Find local sports events and watch parties near you." },
-        { img: "/af.jpeg",   label: "Personalized", title: "YOUR FEED",           desc: "Curated to the teams and sports you're most passionate about." },
-        { img: "/team.jpeg", label: "Community",    title: "CREATE A CLIQ",       desc: "Create a Cliq, Join a Cliq and Find Your Cliq!" },
-        { img: "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?w=600&auto=format&fit=crop&q=80", label: "Global", title: "CROSS-BORDER UNITY", desc: "Sports has no borders. So Join A Cliq!" },
-      ].map((f, i) => (
-        <div key={i} className="feat-card">
-          <img className="feat-img" src={f.img} alt={f.title} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
-          <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(0,0,0,.7) 0%, transparent 55%)" }} />
-          <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, padding: "20px 22px" }}>
-            <p style={{ fontSize: 10, fontWeight: 600, letterSpacing: 1.5, textTransform: "uppercase", color: "rgba(255,255,255,.6)", marginBottom: 5 }}>{f.label}</p>
-            <h3 style={{ fontFamily: "var(--font-headline)", fontSize: 18, fontWeight: 400, color: "#fff", letterSpacing: 1, marginBottom: 5 }}>{f.title}</h3>
-            <p style={{ fontSize: 12, color: "rgba(255,255,255,.65)", lineHeight: 1.5 }}>{f.desc}</p>
-          </div>
-        </div>
-      ))}
-
-    </div>
-  </div>
-</section>
+      <FeaturesSection />
 
      
 
