@@ -807,7 +807,7 @@ export default function SportcliqMinimal() {
           </div>
 
           <div className="hero-tags fu fu3">
-            {["⚽ Soccer", "🏀 Basketball", "🏉 American Football", "🏒 Ice-Hockey"].map(s => (
+            {["⚽ Soccer", "🏀 Basketball", "🏉 American Football", "🏒 IceHockey"].map(s => (
               <span key={s} className="tag">{s}</span>
             ))}
           </div>

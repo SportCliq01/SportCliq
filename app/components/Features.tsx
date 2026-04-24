@@ -27,253 +27,153 @@ const FeaturesSection = () => {
   ];
 
   return (
-    <section className="features">
-      <div className="features-inner">
-        <div className="features-header">
+    <section style={{ padding: "96px 40px", background: "var(--white)" }}>
+      <div style={{ maxWidth: 1200, margin: "0 auto" }}>
+
+        {/* Header */}
+        <div style={{
+          display: "flex", justifyContent: "space-between", alignItems: "flex-end",
+          marginBottom: 48, paddingBottom: 36, borderBottom: "1.5px solid var(--rule)",
+          flexWrap: "wrap", gap: 20,
+        }}>
           <div>
-            <p className="features-eyebrow">Platform Features</p>
-            <h2 className="features-h2">
-              BUILT FOR <br />
-              <span style={{ color: "var(--accent)" }}>REAL FANS.</span>
+            <p style={{ fontSize: 11, fontWeight: 600, letterSpacing: 2, textTransform: "uppercase", color: "var(--ink3)", marginBottom: 14 }}>
+              Platform Features
+            </p>
+            <h2 style={{ fontFamily: "var(--font-headline)", fontSize: "clamp(32px, 5vw, 56px)", fontWeight: 400, letterSpacing: 1, lineHeight: 1 }}>
+              BUILT FOR <br /><span style={{ color: "var(--accent)" }}>REAL FANS.</span>
             </h2>
           </div>
-          <p className="features-sub">
-            Everything you need to live, breathe, and share sports - in one
-            clean, unified experience.
+          <p style={{ fontSize: 15, color: "var(--ink2)", fontWeight: 300, maxWidth: 360, lineHeight: 1.75 }}>
+            Everything you need to live, breathe, and share sports - in one clean, unified experience.
           </p>
         </div>
 
-        <div className="feat-grid">
+        {/* ── Desktop grid ── */}
+        <div className="feat-grid-desktop">
+
           {/* Large card 1 */}
-          <div className="feat-card feat-card--large">
+          <div className="feat-card-large">
             <img
-              className="feat-img"
               src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=800&auto=format&fit=crop&q=80"
               alt="Fan feed"
+              style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover" }}
             />
-            <div className="feat-overlay" />
-            <div className="feat-content">
-              <div className="feat-live-badge">
+            <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(0,0,0,.7) 0%, transparent 55%)" }} />
+            <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, padding: 28 }}>
+              <div style={{ display: "inline-flex", alignItems: "center", gap: 6, marginBottom: 10 }}>
                 <div className="live-dot" />
-                <span className="feat-badge-text">Real-time</span>
+                <span style={{ fontSize: 11, fontWeight: 600, color: "#fff", letterSpacing: 0.5 }}>Real-time</span>
               </div>
-              <h3 className="feat-title feat-title--lg">REAL-TIME FAN FEED</h3>
-              <p className="feat-desc">
-                Live match conversations as they unfold. React and vibe with
-                thousands of fans simultaneously.
+              <h3 style={{ fontFamily: "var(--font-headline)", fontSize: 28, fontWeight: 400, color: "#fff", letterSpacing: 1, marginBottom: 8, lineHeight: 1.1 }}>
+                REAL-TIME FAN FEED
+              </h3>
+              <p style={{ fontSize: 13, color: "rgba(255,255,255,.72)", lineHeight: 1.6, maxWidth: 280 }}>
+                Live match conversations as they unfold. React and vibe with thousands of fans simultaneously.
               </p>
             </div>
           </div>
 
           {/* Large card 2 */}
-          <div className="feat-card feat-card--large">
+          <div className="feat-card-large">
             <img
-              className="feat-img"
               src="/cl.jpg"
               alt="Fan prizes"
+              style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover" }}
             />
-            <div className="feat-overlay" />
-            <div className="feat-content">
-              <p className="feat-label">Prizes</p>
-              <h3 className="feat-title feat-title--lg">PARTICIPATE TO WIN</h3>
-              <p className="feat-desc">
-                Join daily, weekly, or monthly trivia to stand a chance to win
-                amazing prizes.
+            <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(0,0,0,.7) 0%, transparent 50%)" }} />
+            <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, padding: "24px 28px" }}>
+              <p style={{ fontSize: 10, fontWeight: 600, letterSpacing: 1.5, textTransform: "uppercase", color: "rgba(255,255,255,.6)", marginBottom: 5 }}>Prizes</p>
+              <h3 style={{ fontFamily: "var(--font-headline)", fontSize: 28, fontWeight: 400, color: "#fff", letterSpacing: 1, marginBottom: 8 }}>
+                PARTICIPATE TO WIN
+              </h3>
+              <p style={{ fontSize: 13, color: "rgba(255,255,255,.65)", lineHeight: 1.6 }}>
+                Join daily, weekly, or monthly trivia to stand a chance to win amazing prizes.
               </p>
             </div>
           </div>
 
-          {/* Small cards */}
+          {/* 4 Small cards */}
           {smallCards.map((f, i) => (
-            <div key={i} className="feat-card feat-card--small">
+            <div key={i} className="feat-card-small">
               <img
-                className="feat-img"
                 src={f.img}
                 alt={f.title}
+                style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover" }}
               />
-              <div className="feat-overlay feat-overlay--sm" />
-              <div className="feat-content feat-content--sm">
-                <p className="feat-label">{f.label}</p>
-                <h3 className="feat-title feat-title--sm">{f.title}</h3>
-                <p className="feat-desc feat-desc--sm">{f.desc}</p>
+              <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(0,0,0,.75) 0%, transparent 60%)" }} />
+              <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, padding: "20px 22px" }}>
+                <p style={{ fontSize: 10, fontWeight: 600, letterSpacing: 1.5, textTransform: "uppercase", color: "rgba(255,255,255,.6)", marginBottom: 5 }}>{f.label}</p>
+                <h3 style={{ fontFamily: "var(--font-headline)", fontSize: 18, fontWeight: 400, color: "#fff", letterSpacing: 1, marginBottom: 5 }}>{f.title}</h3>
+                <p style={{ fontSize: 12, color: "rgba(255,255,255,.65)", lineHeight: 1.5 }}>{f.desc}</p>
               </div>
             </div>
           ))}
+
         </div>
       </div>
 
       <style>{`
-        /* ── Grid layout ── */
-        .feat-grid {
+        /* ── Desktop: 4-col, 2-row ── */
+        .feat-grid-desktop {
           display: grid;
-          gap: 10px;
-          grid-template-columns: 1fr 1fr;
+          gap: 14px;
+          grid-template-columns: repeat(4, 1fr);
+          grid-template-rows: 320px 220px;
         }
 
-        /* ── Card base ── */
-        .feat-card {
+        /* Large cards: span 2 cols, sit in row 1 only */
+        .feat-card-large {
+          grid-column: span 2;
           position: relative;
-          overflow: hidden;
-          border-radius: 12px;
-        }
-
-        .feat-img {
-          position: absolute;
-          inset: 0;
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          display: block;
-        }
-
-        /* ── Overlays ── */
-        .feat-overlay {
-          position: absolute;
-          inset: 0;
-          background: linear-gradient(to top, rgba(0,0,0,.7) 0%, transparent 55%);
-        }
-        .feat-overlay--sm {
-          background: linear-gradient(to top, rgba(0,0,0,.75) 0%, transparent 60%);
-        }
-
-        /* ── Content blocks ── */
-        .feat-content {
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          right: 0;
-          padding: 14px;
-        }
-        .feat-content--sm {
-          padding: 12px;
-        }
-
-        /* ── Live badge ── */
-        .feat-live-badge {
-          display: inline-flex;
-          align-items: center;
-          gap: 5px;
-          margin-bottom: 6px;
-        }
-        .feat-badge-text {
-          font-size: 10px;
-          font-weight: 600;
-          color: #fff;
-          letter-spacing: 0.5px;
-        }
-
-        /* ── Labels ── */
-        .feat-label {
-          font-size: 9px;
-          font-weight: 600;
-          letter-spacing: 1.5px;
-          text-transform: uppercase;
-          color: rgba(255,255,255,.6);
-          margin: 0 0 4px;
-        }
-
-        /* ── Titles ── */
-        .feat-title {
-          font-family: var(--font-headline);
-          font-weight: 400;
-          color: #fff;
-          letter-spacing: 0.8px;
-          line-height: 1.1;
-          margin: 0 0 5px;
-        }
-        .feat-title--lg {
-          font-size: 16px;
-        }
-        .feat-title--sm {
-          font-size: 13px;
-          margin-bottom: 3px;
-        }
-
-        /* ── Descriptions ── */
-        .feat-desc {
-          font-size: 11px;
-          color: rgba(255,255,255,.7);
-          line-height: 1.45;
-          margin: 0;
-        }
-        .feat-desc--sm {
-          font-size: 10px;
-          line-height: 1.4;
-
-          /* clamp to 2 lines on mobile so it never overflows */
-          display: -webkit-box;
-          -webkit-line-clamp: 2;
-          -webkit-box-orient: vertical;
+          border-radius: 16px;
           overflow: hidden;
         }
 
-        /* ── Card sizes (mobile) ── */
-        .feat-card--large {
+        /* Small cards: span 1 col, auto-flow into row 2 */
+        .feat-card-small {
           grid-column: span 1;
-          height: 210px;
-        }
-        .feat-card--small {
-          grid-column: span 1;
-          height: 145px;
+          position: relative;
+          border-radius: 16px;
+          overflow: hidden;
         }
 
-        /* ── Desktop (768px+) ── */
-        @media (min-width: 768px) {
-          .feat-grid {
-            gap: 14px;
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: 260px 260px;
+        /* ── Mobile: simple 2-col stack ── */
+        @media (max-width: 768px) {
+          .feat-grid-desktop {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: none;
           }
 
-          .feat-card--large {
-            grid-column: span 2;
-            grid-row: span 2;
-            height: auto;
-          }
-
-          .feat-card--small {
+          .feat-card-large {
             grid-column: span 1;
-            grid-row: span 1;
-            height: auto;
+            height: 210px;
           }
 
-          .feat-content {
-            padding: 28px;
-          }
-          .feat-content--sm {
-            padding: 20px 22px;
+          .feat-card-small {
+            height: 145px;
           }
 
-          .feat-title--lg {
-            font-size: 28px;
-            margin-bottom: 8px;
-          }
-          .feat-title--sm {
-            font-size: 18px;
-            margin-bottom: 5px;
+          /* Shrink text on mobile */
+          .feat-card-large h3,
+          .feat-card-small h3 {
+            font-size: 14px !important;
+            margin-bottom: 3px !important;
           }
 
-          .feat-desc {
-            font-size: 13px;
-            line-height: 1.6;
-          }
-          .feat-desc--sm {
-            font-size: 12px;
-            line-height: 1.5;
-            -webkit-line-clamp: unset;
-            overflow: visible;
-          }
-
-          .feat-label {
-            font-size: 10px;
-            margin-bottom: 5px;
+          .feat-card-large p:last-child,
+          .feat-card-small p:last-child {
+            font-size: 10px !important;
+            line-height: 1.4 !important;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
           }
 
-          .feat-live-badge {
-            margin-bottom: 10px;
-          }
-          .feat-badge-text {
-            font-size: 11px;
+          .feat-card-large > div:last-child,
+          .feat-card-small > div:last-child {
+            padding: 12px !important;
           }
         }
       `}</style>
