@@ -107,7 +107,7 @@ export default function Footer() {
       {/* ── Bottom bar ── */}
       <div className="footer-bottom">
         <div className="footer-bottom-inner">
-          <p className="footer-copyright">© 2025 SportCliq. All rights reserved.</p>
+          <p className="footer-copyright">© 2026 Klarico Technologies Inc. All rights reserved. SportCliq is a product of Klarico Technologies</p>
           <div className="footer-regions">
             {["🇨🇦",].map((flag) => (
               <span key={flag} className="footer-flag">{flag}</span>

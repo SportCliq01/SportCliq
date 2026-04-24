@@ -49,7 +49,7 @@ const FeaturesSection = () => {
           </p>
         </div>
 
-        {/* ── Desktop grid ── */}
+        {/* Grid */}
         <div className="feat-grid-desktop">
 
           {/* Large card 1 */}
@@ -59,7 +59,10 @@ const FeaturesSection = () => {
               alt="Fan feed"
               style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover" }}
             />
-            <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(0,0,0,.7) 0%, transparent 55%)" }} />
+            {/* base dark tint over entire card */}
+            <div style={{ position: "absolute", inset: 0, background: "rgba(0,0,0,.38)" }} />
+            {/* stronger gradient from bottom */}
+            <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(0,0,0,.88) 0%, rgba(0,0,0,.25) 50%, transparent 100%)" }} />
             <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, padding: 28 }}>
               <div style={{ display: "inline-flex", alignItems: "center", gap: 6, marginBottom: 10 }}>
                 <div className="live-dot" />
@@ -68,7 +71,7 @@ const FeaturesSection = () => {
               <h3 style={{ fontFamily: "var(--font-headline)", fontSize: 28, fontWeight: 400, color: "#fff", letterSpacing: 1, marginBottom: 8, lineHeight: 1.1 }}>
                 REAL-TIME FAN FEED
               </h3>
-              <p style={{ fontSize: 13, color: "rgba(255,255,255,.72)", lineHeight: 1.6, maxWidth: 280 }}>
+              <p style={{ fontSize: 13, color: "rgba(255,255,255,.9)", lineHeight: 1.6, maxWidth: 280 }}>
                 Live match conversations as they unfold. React and vibe with thousands of fans simultaneously.
               </p>
             </div>
@@ -81,13 +84,14 @@ const FeaturesSection = () => {
               alt="Fan prizes"
               style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover" }}
             />
-            <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(0,0,0,.7) 0%, transparent 50%)" }} />
+            <div style={{ position: "absolute", inset: 0, background: "rgba(0,0,0,.38)" }} />
+            <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(0,0,0,.88) 0%, rgba(0,0,0,.25) 50%, transparent 100%)" }} />
             <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, padding: "24px 28px" }}>
-              <p style={{ fontSize: 10, fontWeight: 600, letterSpacing: 1.5, textTransform: "uppercase", color: "rgba(255,255,255,.6)", marginBottom: 5 }}>Prizes</p>
+              <p style={{ fontSize: 10, fontWeight: 600, letterSpacing: 1.5, textTransform: "uppercase", color: "rgba(255,255,255,.75)", marginBottom: 5 }}>Prizes</p>
               <h3 style={{ fontFamily: "var(--font-headline)", fontSize: 28, fontWeight: 400, color: "#fff", letterSpacing: 1, marginBottom: 8 }}>
                 PARTICIPATE TO WIN
               </h3>
-              <p style={{ fontSize: 13, color: "rgba(255,255,255,.65)", lineHeight: 1.6 }}>
+              <p style={{ fontSize: 13, color: "rgba(255,255,255,.9)", lineHeight: 1.6 }}>
                 Join daily, weekly, or monthly trivia to stand a chance to win amazing prizes.
               </p>
             </div>
@@ -101,11 +105,12 @@ const FeaturesSection = () => {
                 alt={f.title}
                 style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover" }}
               />
-              <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(0,0,0,.75) 0%, transparent 60%)" }} />
+              <div style={{ position: "absolute", inset: 0, background: "rgba(0,0,0,.38)" }} />
+              <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(0,0,0,.92) 0%, rgba(0,0,0,.25) 55%, transparent 100%)" }} />
               <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, padding: "20px 22px" }}>
-                <p style={{ fontSize: 10, fontWeight: 600, letterSpacing: 1.5, textTransform: "uppercase", color: "rgba(255,255,255,.6)", marginBottom: 5 }}>{f.label}</p>
+                <p style={{ fontSize: 10, fontWeight: 600, letterSpacing: 1.5, textTransform: "uppercase", color: "rgba(255,255,255,.75)", marginBottom: 5 }}>{f.label}</p>
                 <h3 style={{ fontFamily: "var(--font-headline)", fontSize: 18, fontWeight: 400, color: "#fff", letterSpacing: 1, marginBottom: 5 }}>{f.title}</h3>
-                <p style={{ fontSize: 12, color: "rgba(255,255,255,.65)", lineHeight: 1.5 }}>{f.desc}</p>
+                <p style={{ fontSize: 12, color: "rgba(255,255,255,.9)", lineHeight: 1.5 }}>{f.desc}</p>
               </div>
             </div>
           ))}
@@ -114,7 +119,6 @@ const FeaturesSection = () => {
       </div>
 
       <style>{`
-        /* ── Desktop: 4-col, 2-row ── */
         .feat-grid-desktop {
           display: grid;
           gap: 14px;
@@ -122,7 +126,6 @@ const FeaturesSection = () => {
           grid-template-rows: 320px 220px;
         }
 
-        /* Large cards: span 2 cols, sit in row 1 only */
         .feat-card-large {
           grid-column: span 2;
           position: relative;
@@ -130,7 +133,6 @@ const FeaturesSection = () => {
           overflow: hidden;
         }
 
-        /* Small cards: span 1 col, auto-flow into row 2 */
         .feat-card-small {
           grid-column: span 1;
           position: relative;
@@ -138,7 +140,6 @@ const FeaturesSection = () => {
           overflow: hidden;
         }
 
-        /* ── Mobile: simple 2-col stack ── */
         @media (max-width: 768px) {
           .feat-grid-desktop {
             grid-template-columns: 1fr 1fr;
@@ -154,7 +155,6 @@ const FeaturesSection = () => {
             height: 145px;
           }
 
-          /* Shrink text on mobile */
           .feat-card-large h3,
           .feat-card-small h3 {
             font-size: 14px !important;
