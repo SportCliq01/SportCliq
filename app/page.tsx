@@ -135,9 +135,9 @@ export default function SportcliqMinimal() {
 
         /* ── Tag pill ── */
         .tag {
-          display: inline-flex; align-items: center; gap: 5px;
-          padding: 5px 12px; border-radius: 99px; border: 1.5px solid var(--rule);
-          font-family: var(--font-body); font-size: 12px; font-weight: 500; color: var(--ink2);
+          display: inline-flex; align-items: center; gap: 6px;
+          padding: 10px 20px; border-radius: 99px; border: 1.5px solid var(--rule);
+          font-family: var(--font-body); font-size: 15px; font-weight: 500; color: var(--ink2);
           letter-spacing: .1px; transition: border-color .2s, background .2s;
         }
         .tag:hover { border-color: var(--ink3); background: var(--canvas); }
